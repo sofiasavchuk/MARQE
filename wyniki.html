@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wyniki — MARQÈ</title>
+<meta name="description" content="Realne wyniki kampanii MARQÈ — dane z Meta Ads dla marek SANSHÉ, KICIA i KORRA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0A0A;--white:#FFFFFF;--grey:#0A0A0A;
+  --line:rgba(10,10,10,.16);--line-inv:rgba(255,255,255,.16);
+  --pad:120px;--s2:16px;--s3:24px;--s4:40px;--s5:64px;--s6:96px;--s7:140px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{font-family:'Jost',system-ui,sans-serif;font-weight:400;background:var(--white);color:var(--black);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
+::selection{background:var(--black);color:var(--white)}
+.micro{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:400}
+em.sx{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0;text-transform:none}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:26px var(--pad);mix-blend-mode:difference;color:#fff}
+.nav .logo{font-weight:500;letter-spacing:.3em;font-size:15px}
+.nav .right{display:flex;align-items:center;gap:var(--s4)}
+.nav ul{display:flex;gap:var(--s4);list-style:none}
+.nav a,.nav .lng button{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:400;position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height:1px;background:#fff;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav ul a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav .lng{display:flex;gap:10px}
+.nav .lng button{opacity:.45;transition:opacity .3s}
+.nav .lng button.on{opacity:1}
+.nav .lng .sep{opacity:.35}
+
+header.page{padding:190px var(--pad) var(--s5)}
+header.page .lead{color:var(--grey);margin-bottom:var(--s3)}
+header.page h1{font-size:clamp(40px,5vw,72px);font-weight:300;line-height:1.08;letter-spacing:-.015em;max-width:18ch}
+header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-size:16px;line-height:1.7}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:0 var(--pad) var(--s6)}
+.card{background:var(--black);color:var(--white);border-radius:2px;padding:34px 34px 30px;display:flex;flex-direction:column;gap:6px;opacity:0;transform:translateY(36px);transition:opacity .8s var(--ease),transform .8s var(--ease);position:relative;overflow:hidden}
+.card.in{opacity:1;transform:none}
+.card .c-label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.card .c-big{font-size:clamp(40px,3.6vw,62px);font-weight:300;line-height:1.05;font-variant-numeric:tabular-nums;margin-top:8px}
+.card .c-sub{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-top:4px}
+.card.span2{grid-column:span 2}
+.card svg{display:block;width:100%;margin-top:auto}
+.chart-line{fill:none;stroke:#fff;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.chart-fill{fill:rgba(255,255,255,.08);stroke:none}
+.chart-grid{stroke:rgba(255,255,255,.12);stroke-width:1}
+.chart-dot{fill:#fff}
+
+/* gauge */
+.gauge{position:relative;margin-top:auto;display:flex;justify-content:center}
+.gauge .gv{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:6px}
+.gauge .gv .n{font-size:clamp(34px,2.6vw,46px);font-weight:300;font-variant-numeric:tabular-nums}
+.gauge .gv .t{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.g-track{fill:none;stroke:rgba(255,255,255,.15);stroke-width:10;stroke-linecap:round}
+.g-arc{fill:none;stroke:#fff;stroke-width:10;stroke-linecap:round}
+
+/* project cards */
+.p-head{display:flex;justify-content:space-between;align-items:baseline}
+.p-name{font-size:26px;font-weight:300;letter-spacing:.06em;text-transform:uppercase}
+.p-type{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+.p-metrics{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;margin:18px 0 20px}
+.p-m .v{font-size:clamp(22px,1.8vw,30px);font-weight:300;font-variant-numeric:tabular-nums}
+.p-m .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+
+.src{padding:0 var(--pad) var(--s4);color:var(--grey);font-size:13px;letter-spacing:.06em;max-width:calc(78ch + 2*var(--pad))}
+.foot{margin:0 var(--pad);border-top:1px solid var(--line);padding:var(--s3) 0 var(--s4);display:flex;justify-content:space-between;gap:var(--s3);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);flex-wrap:wrap}
+.foot a:hover{color:var(--black)}
+.btn-r{display:inline-block;padding:16px 34px;border:1px solid var(--black);border-radius:2px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:400;background:var(--black);color:var(--white);transition:background .5s var(--ease),color .5s var(--ease)}
+.btn-r:hover{background:transparent;color:var(--black)}
+
+@media(max-width:1024px){
+  :root{--pad:56px}
+  .grid{grid-template-columns:1fr 1fr}
+  .card.span2{grid-column:span 2}
+}
+@media(max-width:640px){
+  :root{--pad:22px}
+  .nav{padding:20px 22px}
+  .nav ul{gap:14px}
+  .nav a,.nav .lng button{font-size:11px;letter-spacing:.12em}
+  header.page{padding-top:140px}
+  .grid{grid-template-columns:1fr}
+  .card.span2{grid-column:span 1}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .card{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<nav class="nav">
+  <a class="logo" href="index.html">MARQÈ</a>
+  <div class="right">
+    <ul>
+      <li><a href="index.html#work" data-en="Projects">Projekty</a></li>
+      <li><a href="index.html#services" data-en="Services">Usługi</a></li>
+      <li><a href="index.html#contact" data-en="Contact">Kontakt</a></li>
+    </ul>
+    <div class="lng" role="group" aria-label="Language">
+      <button id="lng-pl" class="on" type="button">PL</button><span class="sep">/</span><button id="lng-en" type="button">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page">
+  <p class="lead micro" data-en="Results · last 90 days">Wyniki · ostatnie 90 dni</p>
+  <h1><em class="sx" data-en="Real results">Realne wyniki</em><span data-en=", straight from Meta Ads.">, prosto z Meta Ads.</span></h1>
+  <p class="note" data-en="Aggregated live data from the ad accounts of three brands we run: SANSHÉ, KICIA and KORRA. No screenshots, no rounding up.">Zbiorcze dane na żywo z kont reklamowych trzech marek, które prowadzimy: SANSHÉ, KICIA i KORRA. Bez screenów i bez zaokrąglania w górę.</p>
+</header>
+
+<div class="grid" id="grid">
+
+  <!-- combined reach + trend -->
+  <div class="card span2">
+    <span class="c-label" data-en="Total reach">Zasięg łączny</span>
+    <span class="c-big cnt" data-v="480173">0</span>
+    <span class="c-sub" data-en="unique people · 3 brands">unikalne osoby · 3 marki</span>
+    <svg viewBox="0 0 640 150" preserveAspectRatio="none" style="height:150px">
+      <line class="chart-grid" x1="0" y1="145" x2="640" y2="145"/>
+      <line class="chart-grid" x1="0" y1="75" x2="640" y2="75"/>
+      <polygon class="chart-fill" id="fill-main" points=""/>
+      <polyline class="chart-line draw" id="line-main" points=""/>
+    </svg>
+    <span class="c-sub" style="margin-top:10px" data-en="weekly impressions, all accounts combined">wyświetlenia tygodniowo, wszystkie konta łącznie</span>
+  </div>
+
+  <!-- CTR gauge -->
+  <div class="card">
+    <span class="c-label" data-en="Average CTR">Średni CTR</span>
+    <div class="gauge">
+      <svg viewBox="0 0 200 115" style="width:200px;height:115px">
+        <path class="g-track" d="M 15 105 A 85 85 0 0 1 185 105"/>
+        <path class="g-arc" id="gauge-arc" d="M 15 105 A 85 85 0 0 1 185 105"/>
+      </svg>
+      <div class="gv"><span class="n"><span class="cnt" data-v="3.38" data-dec="2">0</span>%</span><span class="t" data-en="clicks / impressions">kliknięcia / wyświetlenia</span></div>
+    </div>
+    <span class="c-sub" style="margin-top:14px" data-en="every account above 2%">każde konto powyżej 2%</span>
+  </div>
+
+  <!-- three aggregates -->
+  <div class="card">
+    <span class="c-label" data-en="Impressions">Wyświetlenia</span>
+    <span class="c-big cnt" data-v="1360968">0</span>
+    <span class="c-sub" data-en="last 90 days">ostatnie 90 dni</span>
+    <svg viewBox="0 0 300 70" preserveAspectRatio="none" style="height:70px;margin-top:16px">
+      <polyline class="chart-line draw" id="line-imp" points=""/>
+    </svg>
+  </div>
+  <div class="card">
+    <span class="c-label" data-en="Clicks">Kliknięcia</span>
+    <span class="c-big cnt" data-v="45967">0</span>
+    <span class="c-sub" data-en="all campaigns">wszystkie kampanie</span>
+    <svg viewBox="0 0 300 70" preserveAspectRatio="none" style="height:70px;margin-top:16px">
+      <g id="bars-clicks"></g>
+    </svg>
+  </div>
+  <div class="card">
+    <span class="c-label" data-en="Link clicks (unique)">Kliknięcia w link (unikalne)</span>
+    <span class="c-big cnt" data-v="30770">0</span>
+    <span class="c-sub" data-en="traffic driven to clients">ruch skierowany do klientów</span>
+    <svg viewBox="0 0 300 70" preserveAspectRatio="none" style="height:70px;margin-top:16px">
+      <g id="bars-links"></g>
+    </svg>
+  </div>
+
+  <!-- project cards -->
+  <div class="card" data-series="sanshe">
+    <div class="p-head"><span class="p-name">Sanshé</span><span class="p-type" data-en="Premium beauty salon">Premium beauty salon</span></div>
+    <div class="p-metrics">
+      <div class="p-m"><div class="v"><span class="cnt" data-v="2.30" data-dec="2">0</span>%</div><div class="k">CTR</div></div>
+      <div class="p-m"><div class="v"><span class="cnt" data-v="0.51" data-dec="2">0</span> zł</div><div class="k">CPC</div></div>
+      <div class="p-m"><div class="v cnt" data-v="76569">0</div><div class="k" data-en="Reach">Zasięg</div></div>
+      <div class="p-m"><div class="v cnt" data-v="3033">0</div><div class="k" data-en="Link clicks">Kliknięcia w link</div></div>
+    </div>
+    <svg viewBox="0 0 300 60" preserveAspectRatio="none" style="height:60px"><polyline class="chart-line draw" points=""/></svg>
+  </div>
+  <div class="card" data-series="kicia">
+    <div class="p-head"><span class="p-name">Kicia</span><span class="p-type" data-en="Asian bistro">Bistro azjatyckie</span></div>
+    <div class="p-metrics">
+      <div class="p-m"><div class="v"><span class="cnt" data-v="3.80" data-dec="2">0</span>%</div><div class="k">CTR</div></div>
+      <div class="p-m"><div class="v"><span class="cnt" data-v="0.22" data-dec="2">0</span> zł</div><div class="k">CPC</div></div>
+      <div class="p-m"><div class="v cnt" data-v="243447">0</div><div class="k" data-en="Reach">Zasięg</div></div>
+      <div class="p-m"><div class="v cnt" data-v="19156">0</div><div class="k" data-en="Link clicks">Kliknięcia w link</div></div>
+    </div>
+    <svg viewBox="0 0 300 60" preserveAspectRatio="none" style="height:60px"><polyline class="chart-line draw" points=""></polyline></svg>
+  </div>
+  <div class="card" data-series="korra">
+    <div class="p-head"><span class="p-name">Korra</span><span class="p-type" data-en="Asian restaurant">Restauracja azjatycka</span></div>
+    <div class="p-metrics">
+      <div class="p-m"><div class="v"><span class="cnt" data-v="3.21" data-dec="2">0</span>%</div><div class="k">CTR</div></div>
+      <div class="p-m"><div class="v"><span class="cnt" data-v="0.35" data-dec="2">0</span> zł</div><div class="k">CPC</div></div>
+      <div class="p-m"><div class="v cnt" data-v="160157">0</div><div class="k" data-en="Reach">Zasięg</div></div>
+      <div class="p-m"><div class="v cnt" data-v="8581">0</div><div class="k" data-en="Link clicks">Kliknięcia w link</div></div>
+    </div>
+    <svg viewBox="0 0 300 60" preserveAspectRatio="none" style="height:60px"><polyline class="chart-line draw" points=""></polyline></svg>
+  </div>
+</div>
+
+<div style="padding:0 var(--pad) 64px">
+  <div style="border-top:1px solid var(--line);padding-top:40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+    <p style="font-size:clamp(24px,2.6vw,36px);font-weight:300;max-width:20ch" data-en="Want numbers like these for your brand?">Chcesz takich liczb dla swojej marki?</p>
+    <a class="btn-r" href="index.html#contact" data-en="Send a brief &rarr;">Wyślij brief &rarr;</a>
+  </div>
+</div>
+<p class="src" data-en="Source: Meta Ads API · 20.05–17.08.2026 · ad accounts of SANSHÉ, KICIA, KORRA. CTR = clicks / impressions, account-level data.">Źródło: Meta Ads API · 20.05–17.08.2026 · konta reklamowe SANSHÉ, KICIA, KORRA. CTR = kliknięcia / wyświetlenia, dane na poziomie konta.</p>
+
+<div class="foot">
+  <span>MARQÈ © 2026 · Warszawa</span>
+  <a href="index.html" data-en="marqe — home">marqe — strona główna</a>
+  <a href="polityka-prywatnosci.html" data-en="Privacy policy (RODO/GDPR)">Polityka prywatności (RODO)</a>
+</div>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+
+  /* ---------- typografia: wiszace spojniki (nbsp) ---------- */
+  function fixOrphans(root){
+    var re=/([\s\u00A0(>\u00AB\u201E\u201C"]|^)((?:[iwzoauIWZOAU])|(?:[Dd]o|[Nn]a|[Oo]d|[Pp]o|[Zz]a|[Zz]e|[Ww]e))[ ](?=\S)/g;
+    var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null);
+    var n;
+    while(n=w.nextNode()){
+      var p=n.parentNode&&n.parentNode.nodeName;
+      if(p==='SCRIPT'||p==='STYLE')continue;
+      var v=n.nodeValue;
+      if(!v||v.length<4)continue;
+      var out=v.replace(re,'$1$2\u00A0').replace(re,'$1$2\u00A0');
+      out=out.replace(/(\d)[ ](\d{3})(?!\d)/g,'$1\u00A0$2');
+      out=out.replace(/(\d)[ ](h|zl|z\u0142|%|dni|PLN)(?![\w\u0142])/g,'$1\u00A0$2');
+      if(out!==v)n.nodeValue=out;
+    }
+  }
+
+  /* i18n */
+  var lang='pl';
+  document.querySelectorAll('[data-en]').forEach(function(el){el.setAttribute('data-pl',el.innerHTML)});
+  function setLang(l){lang=l;document.documentElement.lang=l;
+    document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute(l==='en'?'data-en':'data-pl')});
+    document.getElementById('lng-pl').classList.toggle('on',l==='pl');
+    document.getElementById('lng-en').classList.toggle('on',l==='en');
+    fixOrphans(document.body);}
+  fixOrphans(document.body);
+  document.getElementById('lng-pl').addEventListener('click',function(){setLang('pl')});
+  document.getElementById('lng-en').addEventListener('click',function(){setLang('en')});
+
+  /* ---- real weekly data (Meta Ads API, 20.05–17.08.2026) ---- */
+  var W={
+    combined:[24208,16573,63237,48528,48841,58536,91923,101003,124724,116697,211771,227806,227121],
+    clicks:[1252,701,2621,2240,1743,2627,3658,4096,3807,4936,7882,7006,3398],
+    links:[3033,19156,8581],
+    sanshe:[0,313,21527,6678,0,0,21271,15176,23357,3731,49783,50261,23865],
+    kicia:[0,0,26865,27338,20858,28338,36699,53447,43542,77216,117076,131502,160645],
+    korra:[24208,16260,14845,14512,27983,30198,33953,32380,57825,35750,44912,46043,42611]
+  };
+
+  function pts(data,w,h,pad){
+    var max=Math.max.apply(null,data),n=data.length;
+    return data.map(function(v,i){
+      var x=(i/(n-1))*w;
+      var y=h-pad-(v/max)*(h-pad*2);
+      return x.toFixed(1)+','+y.toFixed(1);
+    });
+  }
+  function setLine(el,data,w,h){el.setAttribute('points',pts(data,w,h,8).join(' '))}
+
+  setLine(document.getElementById('line-main'),W.combined,640,150);
+  document.getElementById('fill-main').setAttribute('points','0,150 '+pts(W.combined,640,150,8).join(' ')+' 640,150');
+  setLine(document.getElementById('line-imp'),W.combined,300,70);
+  document.querySelector('[data-series="sanshe"] polyline').setAttribute('points',pts(W.sanshe,300,60,6).join(' '));
+  document.querySelector('[data-series="kicia"] polyline').setAttribute('points',pts(W.kicia,300,60,6).join(' '));
+  document.querySelector('[data-series="korra"] polyline').setAttribute('points',pts(W.korra,300,60,6).join(' '));
+
+  /* bars */
+  function bars(id,data,w,h){
+    var g=document.getElementById(id),max=Math.max.apply(null,data),n=data.length,bw=w/n*0.55;
+    data.forEach(function(v,i){
+      var bh=(v/max)*(h-6);
+      var r=document.createElementNS('http://www.w3.org/2000/svg','rect');
+      r.setAttribute('x',(i/n)*w+((w/n)-bw)/2);
+      r.setAttribute('y',h-bh);r.setAttribute('width',bw);r.setAttribute('height',bh);
+      r.setAttribute('fill','#fff');r.setAttribute('opacity','0.85');
+      r.style.transformOrigin='center bottom';r.style.transformBox='fill-box';
+      if(!reduce){r.style.transform='scaleY(0)';r.style.transition='transform .9s cubic-bezier(.22,1,.36,1) '+(i*45)+'ms';}
+      g.appendChild(r);
+    });
+  }
+  bars('bars-clicks',W.clicks,300,70);
+  bars('bars-links',W.links,300,70);
+
+  /* line draw prep */
+  document.querySelectorAll('polyline.draw').forEach(function(p){
+    var len=p.getTotalLength();
+    p.style.strokeDasharray=len;
+    if(!reduce)p.style.strokeDashoffset=len;
+  });
+
+  /* gauge prep — 3.38% on a 0–5% scale */
+  var arc=document.getElementById('gauge-arc');
+  var alen=arc.getTotalLength();
+  var frac=3.38/5;
+  arc.style.strokeDasharray=alen;
+  arc.style.strokeDashoffset=reduce?alen*(1-frac):alen;
+
+  /* count-up */
+  function fmt(v,dec){
+    if(dec)return v.toFixed(dec).replace('.',',');
+    return Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'\u00A0');
+  }
+  function countUp(el){
+    var target=parseFloat(el.getAttribute('data-v')),dec=parseInt(el.getAttribute('data-dec')||'0');
+    if(reduce){el.textContent=fmt(target,dec);return;}
+    var t0=null,D=1500;
+    function step(t){
+      if(!t0)t0=t;
+      var p=Math.min(1,(t-t0)/D);
+      var e=1-Math.pow(1-p,3);
+      el.textContent=fmt(target*e,dec);
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* reveal on scroll: card in → counts, lines, bars, gauge */
+  var seen=new Set();
+  function activate(card){
+    if(seen.has(card))return;seen.add(card);
+    card.classList.add('in');
+    card.querySelectorAll('.cnt').forEach(countUp);
+    card.querySelectorAll('polyline.draw').forEach(function(p){
+      p.style.transition='stroke-dashoffset 1.8s cubic-bezier(.22,1,.36,1) .2s';
+      requestAnimationFrame(function(){p.style.strokeDashoffset=0});
+    });
+    card.querySelectorAll('rect').forEach(function(r){requestAnimationFrame(function(){r.style.transform='scaleY(1)'})});
+    var a=card.querySelector('#gauge-arc');
+    if(a){a.style.transition='stroke-dashoffset 1.6s cubic-bezier(.22,1,.36,1) .3s';
+      requestAnimationFrame(function(){a.style.strokeDashoffset=alen*(1-frac)});}
+  }
+  var cards=document.querySelectorAll('.card');
+  if('IntersectionObserver'in window&&!reduce){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){activate(e.target);io.unobserve(e.target);}});
+    },{threshold:.25});
+    cards.forEach(function(c,i){
+      c.style.transitionDelay=(i%3*90)+'ms';
+      io.observe(c);
+    });
+    /* jump-scroll safety: activate anything already passed or on screen */
+    addEventListener('scroll',function(){
+      cards.forEach(function(c){
+        if(!seen.has(c)&&c.getBoundingClientRect().top<innerHeight)activate(c);
+      });
+    },{passive:true});
+  }else{
+    cards.forEach(activate);
+  }
+})();
+</script>
+</body>
+</html>
