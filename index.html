@@ -540,15 +540,15 @@ html:not(.js) .a-it{opacity:1;transform:none}
       </div>
 
       <div class="f-block">
-        <span class="f-label micro" data-en="Budget for our services (optional)">Budżet na współpracę z nami (opcjonalnie)</span>
+        <span class="f-label micro" data-en="Budget for our services (optional)">Budżet na współpracę (opcjonalnie)</span>
         <div class="chips" id="budgetChips" aria-describedby="budget-note">
-          <button type="button" class="chip" data-v="2 000–3 999 zł brutto">2 000–3 999 zł</button>
-          <button type="button" class="chip" data-v="4 000–7 999 zł brutto">4 000–7 999 zł</button>
-          <button type="button" class="chip" data-v="8 000–14 999 zł brutto">8 000–14 999 zł</button>
-          <button type="button" class="chip" data-v="15 000 zł+ brutto">15 000 zł +</button>
+          <button type="button" class="chip" data-v="2–4 tys. zł ">2–4 tys. zł</button>
+          <button type="button" class="chip" data-v="4–8 tys. zł ">4–8 tys. zł</button>
+          <button type="button" class="chip" data-v="8–15 tys. zł ">8–15 tys. zł</button>
+          <button type="button" class="chip" data-v="15 tys. zł+ ">15 tys. zł +</button>
           <button type="button" class="chip" data-v="Do ustalenia" data-en="Let’s discuss">Do ustalenia</button>
         </div>
-        <p class="form-note" id="budget-note" data-en="Amounts include tax and cover MARQÈ’s services only. Advertising spend on Meta and Google is separate. For ongoing support, select a monthly budget; for a one-off project, select the total project budget. The final quote depends on the scope.">Kwoty brutto dotyczą wyłącznie usług MARQÈ. Budżet reklamowy w Meta i Google jest rozliczany oddzielnie. Przy stałej współpracy wybierz kwotę miesięczną, a przy jednorazowym projekcie — budżet na cały projekt. Ostateczna wycena zależy od zakresu prac.</p>
+        <p class="form-note" id="budget-note" data-en="The selected budget covers our services. Meta and Google advertising spend is agreed with you separately based on the strategy and paid directly by you to the platforms. Please allow for this additional cost when planning your total budget. For ongoing support, select a monthly amount; for a one-off project, select the total service budget.">Wybrany budżet dotyczy naszych usług. Wydatki na reklamy w Meta i Google ustalamy z Tobą osobno, na podstawie strategii. Opłacasz je bezpośrednio na platformach reklamowych — uwzględnij ten dodatkowy koszt, planując całość wydatków. Przy stałej współpracy wybierz kwotę miesięczną, a przy jednorazowym projekcie — budżet na jego realizację.</p>
       </div>
 
       <div class="f-block">
@@ -857,8 +857,8 @@ html:not(.js) .a-it{opacity:1;transform:none}
     err.classList.remove('show');
     var subject='Brief — '+(brand||name);
     var body=(lang==='en'
-      ? 'Scope: '+scope.join(', ')+'\nBudget for MARQÈ services (including tax, excluding ad spend): '+(budget?budget.getAttribute('data-v'):(lang==='en'?'To discuss':'Do ustalenia'))+'\n\nAbout the brand:\n'+msg+'\n\nName: '+name+'\nBrand: '+brand+'\nE-mail: '+email+(phone?'\nPhone: '+phone:'')+'\n\nGDPR consent: yes'
-      : 'Zakres: '+scope.join(', ')+'\nBudżet na usługi MARQÈ (brutto, bez budżetu reklamowego): '+(budget?budget.getAttribute('data-v'):(lang==='en'?'To discuss':'Do ustalenia'))+'\n\nO marce:\n'+msg+'\n\nImię: '+name+'\nMarka: '+brand+'\nE-mail: '+email+(phone?'\nTelefon: '+phone:'')+'\n\nZgoda RODO: tak');
+      ? 'Scope: '+scope.join(', ')+'\nBudget for MARQÈ services (excluding ad spend): '+(budget?budget.getAttribute('data-v'):(lang==='en'?'To discuss':'Do ustalenia'))+'\n\nAbout the brand:\n'+msg+'\n\nName: '+name+'\nBrand: '+brand+'\nE-mail: '+email+(phone?'\nPhone: '+phone:'')+'\n\nGDPR consent: yes'
+      : 'Zakres: '+scope.join(', ')+'\nBudżet na usługi MARQÈ (bez budżetu reklamowego): '+(budget?budget.getAttribute('data-v'):(lang==='en'?'To discuss':'Do ustalenia'))+'\n\nO marce:\n'+msg+'\n\nImię: '+name+'\nMarka: '+brand+'\nE-mail: '+email+(phone?'\nTelefon: '+phone:'')+'\n\nZgoda RODO: tak');
     var href='mailto:marqepragency@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
     document.getElementById('f-sent').classList.add('show');
     this.setAttribute('data-mailto',href);
