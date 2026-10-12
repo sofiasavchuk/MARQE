@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wyniki — MARQÈ</title>
-<meta name="description" content="Realne wyniki kampanii MARQÈ — dane z Meta Ads dla marek SANSHÉ, KICIA i KORRA.">
+<meta name="description" content="Realne wyniki kampanii MARQÈ — dane z Meta Ads dla marek SANSHÉ i KICIA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -114,65 +114,12 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
 </nav>
 
 <header class="page">
-  <p class="lead micro" data-en="Results · last 90 days">Wyniki · ostatnie 90 dni</p>
-  <h1><em class="sx" data-en="Real results">Realne wyniki</em><span data-en=", straight from Meta Ads.">, prosto z Meta Ads.</span></h1>
-  <p class="note" data-en="Aggregated live data from the ad accounts of three brands we run: SANSHÉ, KICIA and KORRA. No screenshots, no rounding up.">Zbiorcze dane na żywo z kont reklamowych trzech marek, które prowadzimy: SANSHÉ, KICIA i KORRA. Bez screenów i bez zaokrąglania w górę.</p>
+  <p class="lead micro" data-en="Selected results">Wybrane wyniki</p>
+  <h1><em class="sx" data-en="Campaign results">Wyniki kampanii</em><span data-en=" — Meta Ads."> — Meta Ads.</span></h1>
+  <p class="note" data-en="Selected results for SANSHÉ and KICIA. The figures below come from the earlier site version and await verification against campaign reports.">Wybrane wyniki dla SANSHÉ i KICIA. Poniższe dane pochodzą z wcześniejszej wersji strony i wymagają weryfikacji z raportami kampanii.</p>
 </header>
 
 <div class="grid" id="grid">
-
-  <!-- combined reach + trend -->
-  <div class="card span2">
-    <span class="c-label" data-en="Total reach">Zasięg łączny</span>
-    <span class="c-big cnt" data-v="480173">0</span>
-    <span class="c-sub" data-en="unique people · 3 brands">unikalne osoby · 3 marki</span>
-    <svg viewBox="0 0 640 150" preserveAspectRatio="none" style="height:150px">
-      <line class="chart-grid" x1="0" y1="145" x2="640" y2="145"/>
-      <line class="chart-grid" x1="0" y1="75" x2="640" y2="75"/>
-      <polygon class="chart-fill" id="fill-main" points=""/>
-      <polyline class="chart-line draw" id="line-main" points=""/>
-    </svg>
-    <span class="c-sub" style="margin-top:10px" data-en="weekly impressions, all accounts combined">wyświetlenia tygodniowo, wszystkie konta łącznie</span>
-  </div>
-
-  <!-- CTR gauge -->
-  <div class="card">
-    <span class="c-label" data-en="Average CTR">Średni CTR</span>
-    <div class="gauge">
-      <svg viewBox="0 0 200 115" style="width:200px;height:115px">
-        <path class="g-track" d="M 15 105 A 85 85 0 0 1 185 105"/>
-        <path class="g-arc" id="gauge-arc" d="M 15 105 A 85 85 0 0 1 185 105"/>
-      </svg>
-      <div class="gv"><span class="n"><span class="cnt" data-v="3.38" data-dec="2">0</span>%</span><span class="t" data-en="clicks / impressions">kliknięcia / wyświetlenia</span></div>
-    </div>
-    <span class="c-sub" style="margin-top:14px" data-en="every account above 2%">każde konto powyżej 2%</span>
-  </div>
-
-  <!-- three aggregates -->
-  <div class="card">
-    <span class="c-label" data-en="Impressions">Wyświetlenia</span>
-    <span class="c-big cnt" data-v="1360968">0</span>
-    <span class="c-sub" data-en="last 90 days">ostatnie 90 dni</span>
-    <svg viewBox="0 0 300 70" preserveAspectRatio="none" style="height:70px;margin-top:16px">
-      <polyline class="chart-line draw" id="line-imp" points=""/>
-    </svg>
-  </div>
-  <div class="card">
-    <span class="c-label" data-en="Clicks">Kliknięcia</span>
-    <span class="c-big cnt" data-v="45967">0</span>
-    <span class="c-sub" data-en="all campaigns">wszystkie kampanie</span>
-    <svg viewBox="0 0 300 70" preserveAspectRatio="none" style="height:70px;margin-top:16px">
-      <g id="bars-clicks"></g>
-    </svg>
-  </div>
-  <div class="card">
-    <span class="c-label" data-en="Link clicks (unique)">Kliknięcia w link (unikalne)</span>
-    <span class="c-big cnt" data-v="30770">0</span>
-    <span class="c-sub" data-en="traffic driven to clients">ruch skierowany do klientów</span>
-    <svg viewBox="0 0 300 70" preserveAspectRatio="none" style="height:70px;margin-top:16px">
-      <g id="bars-links"></g>
-    </svg>
-  </div>
 
   <!-- project cards -->
   <div class="card" data-series="sanshe">
@@ -195,25 +142,16 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
     </div>
     <svg viewBox="0 0 300 60" preserveAspectRatio="none" style="height:60px"><polyline class="chart-line draw" points=""></polyline></svg>
   </div>
-  <div class="card" data-series="korra">
-    <div class="p-head"><span class="p-name">Korra</span><span class="p-type" data-en="Asian restaurant">Restauracja azjatycka</span></div>
-    <div class="p-metrics">
-      <div class="p-m"><div class="v"><span class="cnt" data-v="3.21" data-dec="2">0</span>%</div><div class="k">CTR</div></div>
-      <div class="p-m"><div class="v"><span class="cnt" data-v="0.35" data-dec="2">0</span> zł</div><div class="k">CPC</div></div>
-      <div class="p-m"><div class="v cnt" data-v="160157">0</div><div class="k" data-en="Reach">Zasięg</div></div>
-      <div class="p-m"><div class="v cnt" data-v="8581">0</div><div class="k" data-en="Link clicks">Kliknięcia w link</div></div>
-    </div>
-    <svg viewBox="0 0 300 60" preserveAspectRatio="none" style="height:60px"><polyline class="chart-line draw" points=""></polyline></svg>
-  </div>
+
 </div>
 
 <div style="padding:0 var(--pad) 64px">
   <div style="border-top:1px solid var(--line);padding-top:40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
-    <p style="font-size:clamp(24px,2.6vw,36px);font-weight:300;max-width:20ch" data-en="Want numbers like these for your brand?">Chcesz takich liczb dla swojej marki?</p>
+    <p style="font-size:clamp(24px,2.6vw,36px);font-weight:300;max-width:20ch" data-en="Let’s talk about your goals.">Porozmawiajmy o celach Twojej firmy.</p>
     <a class="btn-r" href="index.html#contact" data-en="Send a brief &rarr;">Wyślij brief &rarr;</a>
   </div>
 </div>
-<p class="src" data-en="Source: Meta Ads API · 20.05–17.08.2026 · ad accounts of SANSHÉ, KICIA, KORRA. CTR = clicks / impressions, account-level data.">Źródło: Meta Ads API · 20.05–17.08.2026 · konta reklamowe SANSHÉ, KICIA, KORRA. CTR = kliknięcia / wyświetlenia, dane na poziomie konta.</p>
+<p class="src" data-en="Reporting period and source will be confirmed during the case study update.">Okres raportowania i źródło danych potwierdzimy podczas aktualizacji studiów przypadku.</p>
 
 <div class="foot">
   <span>MARQÈ © 2026 · Warszawa</span>
@@ -257,12 +195,8 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
 
   /* ---- real weekly data (Meta Ads API, 20.05–17.08.2026) ---- */
   var W={
-    combined:[24208,16573,63237,48528,48841,58536,91923,101003,124724,116697,211771,227806,227121],
-    clicks:[1252,701,2621,2240,1743,2627,3658,4096,3807,4936,7882,7006,3398],
-    links:[3033,19156,8581],
     sanshe:[0,313,21527,6678,0,0,21271,15176,23357,3731,49783,50261,23865],
     kicia:[0,0,26865,27338,20858,28338,36699,53447,43542,77216,117076,131502,160645],
-    korra:[24208,16260,14845,14512,27983,30198,33953,32380,57825,35750,44912,46043,42611]
   };
 
   function pts(data,w,h,pad){
@@ -275,12 +209,8 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
   }
   function setLine(el,data,w,h){el.setAttribute('points',pts(data,w,h,8).join(' '))}
 
-  setLine(document.getElementById('line-main'),W.combined,640,150);
-  document.getElementById('fill-main').setAttribute('points','0,150 '+pts(W.combined,640,150,8).join(' ')+' 640,150');
-  setLine(document.getElementById('line-imp'),W.combined,300,70);
   document.querySelector('[data-series="sanshe"] polyline').setAttribute('points',pts(W.sanshe,300,60,6).join(' '));
   document.querySelector('[data-series="kicia"] polyline').setAttribute('points',pts(W.kicia,300,60,6).join(' '));
-  document.querySelector('[data-series="korra"] polyline').setAttribute('points',pts(W.korra,300,60,6).join(' '));
 
   /* bars */
   function bars(id,data,w,h){
@@ -296,8 +226,6 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
       g.appendChild(r);
     });
   }
-  bars('bars-clicks',W.clicks,300,70);
-  bars('bars-links',W.links,300,70);
 
   /* line draw prep */
   document.querySelectorAll('polyline.draw').forEach(function(p){
@@ -307,11 +235,7 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
   });
 
   /* gauge prep — 3.38% on a 0–5% scale */
-  var arc=document.getElementById('gauge-arc');
-  var alen=arc.getTotalLength();
-  var frac=3.38/5;
-  arc.style.strokeDasharray=alen;
-  arc.style.strokeDashoffset=reduce?alen*(1-frac):alen;
+
 
   /* count-up */
   function fmt(v,dec){
@@ -343,9 +267,7 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
       requestAnimationFrame(function(){p.style.strokeDashoffset=0});
     });
     card.querySelectorAll('rect').forEach(function(r){requestAnimationFrame(function(){r.style.transform='scaleY(1)'})});
-    var a=card.querySelector('#gauge-arc');
-    if(a){a.style.transition='stroke-dashoffset 1.6s cubic-bezier(.22,1,.36,1) .3s';
-      requestAnimationFrame(function(){a.style.strokeDashoffset=alen*(1-frac)});}
+
   }
   var cards=document.querySelectorAll('.card');
   if('IntersectionObserver'in window&&!reduce){
