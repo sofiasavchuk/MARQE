@@ -329,6 +329,18 @@ html:not(.js) .film-controls{display:none}
 @media(max-width:600px){.hero{min-height:500px}.film-controls{bottom:18px;gap:14px}.scroll-cue{left:var(--pad);bottom:28px}.hero .cta .btn{padding:16px 22px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){.hero-inner{opacity:1;visibility:visible}.hero::after{background:rgba(0,0,0,.48)}}
 
+
+/* Preview: permanent agency descriptor, cinematic final message. */
+.nav .logo{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-decoration:none}
+.nav .logo .agency-label{font-size:11px;line-height:1.3;letter-spacing:.035em;text-transform:none;font-weight:400}
+.hero .meta{margin-top:24px;max-width:620px}
+.hero .hero-tagline{font-size:clamp(17px,2vw,26px);line-height:1.45;letter-spacing:.01em;text-transform:none;font-weight:300}
+.hero .cta{margin-top:30px}
+.hero .cta .btn{min-width:200px}
+.s2-title{max-width:20ch;font-size:clamp(34px,5.2vw,74px)}
+.intro-second{display:inline-block;font-size:.68em;line-height:1.25;margin-top:20px;max-width:24ch}
+@media(max-width:600px){.nav .logo .agency-label{font-size:10px}.hero .meta{max-width:290px}.hero .cta .btn{font-size:11px}.s2-bottom{align-items:flex-start}.linkline{font-size:12px}}
+
 .team-intro{font-size:clamp(20px,2.4vw,32px);line-height:1.5;max-width:900px}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin:48px 0}.team-grid article{border-top:1px solid var(--line);padding-top:24px}.team-grid h3{font-size:32px;font-weight:300;margin-bottom:16px}.team-grid p,.team-location{color:var(--grey);line-height:1.8;max-width:54ch}@media(max-width:700px){.team-grid{grid-template-columns:1fr;gap:28px}.team-section .sec-head{align-items:flex-start;gap:20px;flex-direction:column}.nav ul{gap:24px}}
 
 /* Editorial scale and accessible navigation */
@@ -408,8 +420,7 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
     <div class="hero-inner" id="hero-content">
       <h1 aria-label="MARQÈ" id="wordmark"><span class="chm"><span class="ch">M</span></span><span class="chm"><span class="ch">A</span></span><span class="chm"><span class="ch">R</span></span><span class="chm"><span class="ch">Q</span></span><span class="chm"><span class="ch">È</span></span></h1>
       <div class="meta">
-        <span>Creative &amp; Digital Agency</span>
-        <span data-en="Warsaw · Worldwide">Warszawa · Worldwide</span>
+        <span class="hero-tagline" data-en="Open the door to new possibilities.">Otwórz drzwi do nowych możliwości.</span>
       </div>
       <div class="cta">
         <a class="btn" href="#contact"><span class="tx"><span class="l" data-en="Let’s talk">Porozmawiajmy</span><span aria-hidden="true" class="l l2" data-en="Let’s talk">Porozmawiajmy</span></span></a>
@@ -427,10 +438,10 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
   <section id="section-2">
     <div class="s2-inner">
       <p class="s2-idx">MARQÈ — 01</p>
-      <h2 class="s2-title"><span data-en="Your business — our full ">Twój biznes — nasze pełne </span><em class="sx" data-en="commitment">zaangażowanie</em></h2>
+      <h2 class="s2-title"><span data-en="An image that ">Wizerunek, który </span><em class="sx" data-en="stands out.">przyciąga.</em><br><span class="intro-second" data-en="Marketing that helps you reach customers.">Marketing, który pomaga dotrzeć do klientów.</span></h2>
       <div class="s2-bottom">
-        <p class="s2-note" data-en="We run every project end to end — from strategy to delivery.">Każdy projekt prowadzimy kompleksowo — od strategii po realizację.</p>
-        <a class="linkline" href="#work"><span data-en="See projects">Zobacz projekty</span><span class="ar">→</span></a>
+        <p class="s2-note" data-en="We manage social media, create Meta and Google Ads campaigns, and produce photography and video — including AI content.">Prowadzimy social media, tworzymy kampanie Meta i Google Ads oraz produkujemy zdjęcia i wideo — także z wykorzystaniem AI.</p>
+        <a class="linkline" href="#work"><span data-en="Explore our work">Zobacz nasze realizacje</span><span class="ar">→</span></a>
       </div>
     </div>
   </section>
