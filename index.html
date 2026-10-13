@@ -102,13 +102,13 @@ html.menu-open .m-menu a{opacity:1;transform:none}
 .hero-inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 var(--pad);will-change:transform,opacity}
 .hero h1{font-size:var(--fs-h1);font-weight:300;line-height:.94;letter-spacing:-.01em;text-transform:uppercase;display:flex;justify-content:center;user-select:none;text-shadow:0 2px 30px rgba(0,0,0,.45)}
 .hero h1 .chm{display:inline-block;overflow:hidden;padding-top:.22em;margin-top:-.22em}
-.hero h1 .ch{display:inline-block;transform:translateY(118%);transition:transform 1.1s var(--ease)}
-html:not(.js) .hero h1 .ch{transform:none}
-.hero.in h1 .ch{transform:translateY(0)}
+.hero h1 .ch{display:inline-block;transform:translateY(-118%);opacity:0;filter:blur(5px);transition:transform 1.35s cubic-bezier(.16,1,.3,1),opacity .8s ease,filter 1s ease}
+html:not(.js) .hero h1 .ch{transform:none;opacity:1;filter:none}
+.hero.in h1 .ch{transform:translateY(0);opacity:1;filter:blur(0)}
 .hero .meta{margin-top:var(--s3);display:flex;flex-direction:column;gap:6px;letter-spacing:.3em;font-size:13px;text-transform:uppercase;color:#fff;text-shadow:0 1px 16px rgba(0,0,0,.5)}
 .hero .cta{margin-top:var(--s4)}
-.hero .cta .btn{border-color:var(--white);background:var(--white);color:var(--black)}
-.hero .cta .btn:hover{background:transparent;color:var(--white)}
+.hero .cta .btn{border-color:rgba(255,255,255,.65);background:transparent;color:var(--white)}
+.hero .cta .btn:hover,.hero .cta .btn:focus-visible,.hero .cta .btn:active{background:transparent;color:var(--white);border-color:#fff}
 .scroll-cue{position:absolute;left:50%;bottom:52px;transform:translateX(-50%);width:1px;height:44px;overflow:hidden;z-index:2}
 .scroll-cue::before{content:"";position:absolute;left:0;top:-100%;width:1px;height:100%;background:rgba(255,255,255,.7);animation:cue 1.8s var(--ease) infinite}
 @keyframes cue{to{top:100%}}
@@ -303,7 +303,12 @@ html:not(.js) .a-it{opacity:1;transform:none}
 .skip-link:focus{top:16px}
 @media(max-width:700px){.f-input{font-size:16px}.hero-description{max-width:360px}}
 
-/* Film hero: native scrolling and a final-frame wordmark. */
+/* Film hero: a downward wordmark reveal synchronized to the door opening. */
+.hero .meta,.hero .cta{opacity:0;transform:translateY(10px);transition:opacity .8s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+.hero.in .meta,.hero.in .cta,html:not(.js) .hero .meta,html:not(.js) .hero .cta{opacity:1;transform:none}
+.hero.in .meta{transition-delay:.55s}
+.hero.in .cta{transition-delay:.8s}
+@media(prefers-reduced-motion:reduce){.hero h1 .ch{filter:none!important}.hero .meta,.hero .cta{opacity:1;transform:none}}
 #scroll-container{height:auto}
 .hero{position:relative;height:100svh;min-height:540px}
 #section-2{position:relative;height:auto;min-height:65vh;transform:none;border-radius:0;box-shadow:none;padding:var(--s7) 0}
@@ -311,7 +316,7 @@ html:not(.js) .a-it{opacity:1;transform:none}
 .hero::after{background:linear-gradient(180deg,rgba(0,0,0,.18),transparent 35%,rgba(0,0,0,.3));transition:background 1s}
 .hero.in::after{background:linear-gradient(180deg,rgba(0,0,0,.65),rgba(0,0,0,.5) 45%,rgba(0,0,0,.65))}
 .nav.over-film{mix-blend-mode:normal;background:linear-gradient(180deg,rgba(0,0,0,.65),transparent);color:#fff}
-.hero-inner{opacity:0;visibility:hidden;transition:opacity 1.2s var(--ease),visibility 1.2s}
+.hero-inner{opacity:0;visibility:hidden;transition:opacity .35s ease,visibility .35s}
 .hero.in .hero-inner,html:not(.js) .hero-inner{opacity:1;visibility:visible}
 .hero .meta{font-size:11px;letter-spacing:.22em;line-height:1.8}
 .hero .cta{margin-top:28px}
@@ -361,7 +366,7 @@ html:not(.js) .film-controls{display:none}
 <div id="scroll-container">
   <header class="hero" id="top">
     <div class="hero-media">
-      <video id="bg-video" src="assets/hero-1.mp4" poster="assets/hero-1-poster.jpg" muted playsinline preload="auto" aria-hidden="true"></video>
+      <video id="bg-video" src="assets/hero-2.mp4" poster="assets/hero-2-poster.jpg" muted playsinline preload="auto" aria-hidden="true"></video>
     </div>
     <div class="hero-inner" id="hero-content">
       <h1 aria-label="MARQÈ" id="wordmark"><span class="chm"><span class="ch">M</span></span><span class="chm"><span class="ch">A</span></span><span class="chm"><span class="ch">R</span></span><span class="chm"><span class="ch">Q</span></span><span class="chm"><span class="ch">È</span></span></h1>
@@ -692,7 +697,7 @@ html:not(.js) .film-controls{display:none}
     var video=document.getElementById('bg-video');
     var toggle=document.getElementById('film-toggle'),skip=document.getElementById('film-skip'),replay=document.getElementById('film-replay');
     var variant=new URLSearchParams(location.search).get('hero');
-    if(!/^[123]$/.test(variant||''))variant='1';
+    if(!/^[123]$/.test(variant||''))variant='2';
     video.src='assets/hero-'+variant+'.mp4';
     video.poster='assets/hero-'+variant+'-poster.jpg';
     var revealed=false,watchdog;
@@ -713,7 +718,7 @@ html:not(.js) .film-controls{display:none}
     }
     video.addEventListener('timeupdate',function(){
       if(!video.paused)armWatchdog();
-      if(isFinite(video.duration)&&video.currentTime>=video.duration-1.6&&!revealed)reveal();
+      if(isFinite(video.duration)&&video.currentTime>=(variant==='3'?5.04:7.2)&&!revealed)reveal();
     });
     video.addEventListener('ended',finish);
     video.addEventListener('error',finish);
