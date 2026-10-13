@@ -309,7 +309,8 @@ html:not(.js) .a-it{opacity:1;transform:none}
 #section-2{position:relative;height:auto;min-height:65vh;transform:none;border-radius:0;box-shadow:none;padding:var(--s7) 0}
 .s2-inner{height:auto}
 .hero::after{background:linear-gradient(180deg,rgba(0,0,0,.18),transparent 35%,rgba(0,0,0,.3));transition:background 1s}
-.hero.in::after{background:rgba(0,0,0,.48)}
+.hero.in::after{background:linear-gradient(180deg,rgba(0,0,0,.65),rgba(0,0,0,.5) 45%,rgba(0,0,0,.65))}
+.nav.over-film{mix-blend-mode:normal;background:linear-gradient(180deg,rgba(0,0,0,.65),transparent);color:#fff}
 .hero-inner{opacity:0;visibility:hidden;transition:opacity 1.2s var(--ease),visibility 1.2s}
 .hero.in .hero-inner,html:not(.js) .hero-inner{opacity:1;visibility:visible}
 .hero .meta{font-size:11px;letter-spacing:.22em;line-height:1.8}
@@ -671,6 +672,10 @@ html:not(.js) .film-controls{display:none}
   });
 
   var hero=document.querySelector('.hero');
+  var filmNav=document.querySelector('.nav');
+  function updateFilmNav(){filmNav.classList.toggle('over-film',window.scrollY<hero.offsetHeight-70);}
+  addEventListener('scroll',updateFilmNav,{passive:true});
+  addEventListener('resize',updateFilmNav);updateFilmNav();
   document.querySelectorAll('#wordmark .ch').forEach(function(c,i){c.style.transitionDelay=(i*55)+'ms'});
 
   /* ---------- reveals (with per-row stagger) ---------- */
