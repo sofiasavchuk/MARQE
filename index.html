@@ -391,6 +391,10 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
 @keyframes film-light{0%{opacity:0;transform:translate(-3%,1%)}45%{opacity:.35}100%{opacity:.55;transform:translate(3%,-1%)}}
 @media(prefers-reduced-motion:reduce){.hero.in .hero-media video,.hero.in .hero-media::after{animation:none!important}.hero-media::after{display:none}}
 
+
+/* Clip decorative motion without making the hero a focus-scroll container. */
+.hero{overflow:clip}
+.hero-media{overflow:hidden}
 </style>
 </head>
 <body>
@@ -751,7 +755,7 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
     video.src=variant==='1'?'assets/hero-1-short.mp4':'assets/hero-'+variant+'.mp4';
     video.poster='assets/hero-'+variant+'-poster.jpg';
     var motion=matchMedia('(prefers-reduced-motion: reduce)');
-    var revealed=false,watchdog,finished=false;
+    var revealed=false,watchdog,finished=false,skipRequested=false;
     function setLabel(pl,en){toggle.setAttribute('data-pl',pl);toggle.setAttribute('data-en',en);toggle.textContent=lang==='en'?en:pl;}
     function reveal(){
       revealed=true;hero.classList.add('in');
@@ -791,12 +795,18 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
         video.pause();hero.classList.add('film-paused');clearTimeout(watchdog);setLabel('Odtwórz','Play');
       }
     });
+    function seekFinalFrame(){
+      if(skipRequested&&isFinite(video.duration)&&video.duration>0){
+        video.currentTime=Math.max(0,video.duration-.1);
+        skipRequested=false;
+      }
+    }
+    video.addEventListener('loadedmetadata',seekFinalFrame);
     skip.addEventListener('click',function(){
-      if(isFinite(video.duration))video.currentTime=Math.max(0,video.duration-.08);
-      finish();
+      skipRequested=true;seekFinalFrame();finish();
     });
     replay.addEventListener('click',function(){
-      revealed=false;finished=false;video.playbackRate=1;hero.classList.remove('in','film-paused');
+      revealed=false;finished=false;skipRequested=false;video.playbackRate=1;hero.classList.remove('in','film-paused');
       document.getElementById('hero-content').setAttribute('inert','');
       video.currentTime=0;play();
     });
