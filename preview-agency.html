@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MARQÈ — Digital Agency · Warszawa</title>
-<meta name="description" content="MARQÈ — premium brand partner dla marek beauty, HoReCa i lifestyle w Warszawie. Strategia, social media, Meta Ads, AI content.">
+<meta name="description" content="MARQÈ — Creative &amp; Digital Agency. Warszawa · Worldwide. Social media, Meta i Google Ads, strategia marki oraz produkcja foto i wideo, także z AI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -343,6 +343,42 @@ html:not(.js) .film-controls{display:none}
 @media(max-width:600px){.nav .logo .agency-label{font-size:10px}.hero .meta{max-width:290px}.hero .cta .btn{font-size:11px}.s2-bottom{align-items:flex-start}.linkline{font-size:12px}}
 
 .team-intro{font-size:clamp(20px,2.4vw,32px);line-height:1.5;max-width:900px}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin:48px 0}.team-grid article{border-top:1px solid var(--line);padding-top:24px}.team-grid h3{font-size:32px;font-weight:300;margin-bottom:16px}.team-grid p,.team-location{color:var(--grey);line-height:1.8;max-width:54ch}@media(max-width:700px){.team-grid{grid-template-columns:1fr;gap:28px}.team-section .sec-head{align-items:flex-start;gap:20px;flex-direction:column}.nav ul{gap:24px}}
+
+/* Editorial scale and accessible navigation */
+:root{--pad:clamp(24px,6.25vw,120px)}
+section[id]{scroll-margin-top:118px}
+.nav{mix-blend-mode:normal;background:rgba(255,255,255,.97);color:var(--black);padding-top:20px;padding-bottom:20px;gap:32px;border-bottom:1px solid transparent;transition:background .25s,color .25s}
+.nav .logo{display:flex;flex-direction:column;gap:6px;flex-shrink:0;align-items:flex-start}
+.nav .logo>span:first-child{font-size:25px;line-height:1.15;letter-spacing:.25em;font-weight:400}
+.nav .logo .agency-label{font-size:16px;line-height:1.4;letter-spacing:.025em;text-transform:none;font-weight:400}
+.nav .right{gap:28px}.nav ul{gap:26px}
+.nav ul a{display:inline-flex;align-items:center;min-height:44px;font-size:11px;letter-spacing:.12em}
+.nav ul a::after{background:currentColor;bottom:4px}
+.nav .lng button{min-width:36px;opacity:.75}.nav .lng button.on{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.nav.over-film{background:linear-gradient(180deg,rgba(0,0,0,.8),rgba(0,0,0,.3) 75%,transparent);color:#fff}
+.nav.over-dark,html.menu-open .nav{background:var(--black);color:#fff}
+.burger{width:44px;height:44px}.burger span{background:currentColor}
+.m-menu{visibility:hidden}.m-menu[aria-hidden="false"]{visibility:visible}
+html.menu-open{overflow:hidden}
+.team-intro+.team-location{margin-top:28px;max-width:76ch}
+.team-grid p{font-size:17px}.team-location{font-size:16px}
+.a-d{font-size:16px;color:#dedede}.a-plus{transform:none!important}
+.acc-item.open .a-plus::before{transform:translateX(-50%) rotate(90deg)}
+.acc-head:focus-visible{outline-offset:-3px}
+.work-row .arrow{opacity:1;transform:none}.work-row .tags{letter-spacing:.04em;font-size:12px}
+.work-row .case-link{font-size:12px;letter-spacing:.06em;text-transform:none;margin-top:12px;text-decoration:underline;text-underline-offset:5px}
+.work-row .thumb:not(:has(img)){display:none}
+.preview:not(:has(img)){display:none}
+.f-input:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+textarea.f-input{resize:vertical}.c-row{flex-wrap:wrap;gap:8px 20px}.c-row a{overflow-wrap:anywhere}
+.btn[disabled]{opacity:.55;cursor:wait}.l2{pointer-events:none}
+html:not(.js) .acc-body{grid-template-rows:1fr}
+@media(min-width:761px) and (max-width:1100px){.nav .right ul,.nav .right .lng{display:none}.burger{display:block}}
+@media(max-width:760px){.nav{padding:18px 24px;gap:16px}.nav .logo>span:first-child{font-size:23px}.nav .logo .agency-label{font-size:14px;letter-spacing:.01em}.m-menu{padding:105px 24px 24px;justify-content:flex-start;overflow-y:auto}.m-menu a{font-size:clamp(26px,6vw,38px);padding:10px 0}.m-menu .m-lng{margin-top:20px}.m-menu .m-lng button{min-width:44px;min-height:44px}.sec-head .tag{font-size:11px}.hero{min-height:560px}.team-grid{gap:28px}.s2-bottom{gap:28px}.s2-note{font-size:17px}.work-row{grid-template-columns:30px 1fr 24px;grid-template-areas:"idx nm arrow" ". tags tags";gap:14px}.work-row .arrow{display:block}.work-row .name{font-size:34px}.work-row .tags{font-size:11px}.acc-head .a-name{font-size:27px}.f-block{margin-bottom:36px}}
+@media(max-width:360px){.nav .logo .agency-label{font-size:13px}.nav{padding-left:20px;padding-right:20px}.hero .hero-tagline{font-size:18px}}
+@media(max-height:550px) and (orientation:landscape){.hero{min-height:480px}.m-menu{padding-top:100px;display:grid;grid-template-columns:1fr 1fr;align-content:start;gap:0 24px}.m-menu a{font-size:22px;padding:8px 0}}
+
+@media(min-width:761px) and (max-width:1024px){.work-row{grid-template-columns:40px 1fr 30px;grid-template-areas:"idx nm arrow" ". tags tags"}}
 </style>
 </head>
 <body>
@@ -354,7 +390,6 @@ html:not(.js) .film-controls{display:none}
   <div class="right">
     <ul>
       <li><a href="#work" data-en="Projects">Projekty</a></li>
-      <li><a href="wyniki.html" data-en="Results">Wyniki</a></li>
       <li><a href="#services" data-en="Services">Usługi</a></li>
       <li><a href="#about" data-en="About us">O nas</a></li>
       <li><a href="#contact" data-en="Contact">Kontakt</a></li>
@@ -362,13 +397,12 @@ html:not(.js) .film-controls{display:none}
     <div class="lng" role="group" aria-label="Language">
       <button id="lng-pl" class="on" type="button">PL</button><span class="sep">/</span><button id="lng-en" type="button">EN</button>
     </div>
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <button class="burger" id="burger" aria-controls="m-menu" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 </nav>
 
-<div class="m-menu" id="m-menu" aria-hidden="true">
+<div class="m-menu" id="m-menu" aria-hidden="true" inert>
   <a href="#work" data-en="Projects">Projekty</a>
-  <a href="wyniki.html" data-en="Results">Wyniki</a>
   <a href="#services" data-en="Services">Usługi</a>
   <a href="#about" data-en="About us">O nas</a>
   <a href="#contact" data-en="Contact">Kontakt</a>
@@ -390,7 +424,7 @@ html:not(.js) .film-controls{display:none}
         <span class="hero-tagline" data-en="Open the door to new possibilities.">Otwórz drzwi do nowych możliwości.</span>
       </div>
       <div class="cta">
-        <a class="btn" href="#contact"><span class="tx"><span class="l" data-en="Let’s talk">Porozmawiajmy</span><span class="l l2" data-en="Let’s talk">Porozmawiajmy</span></span></a>
+        <a class="btn" href="#contact"><span class="tx"><span class="l" data-en="Let’s talk">Porozmawiajmy</span><span aria-hidden="true" class="l l2" data-en="Let’s talk">Porozmawiajmy</span></span></a>
       </div>
     </div>
     <div class="film-controls">
@@ -422,24 +456,24 @@ html:not(.js) .film-controls{display:none}
   </div>
   <!-- MEDIA SLOTY 02–04: JPG/WebP 4:5, 800×1000. Dodaj data-img="plik.jpg" do wiersza. -->
   <div class="work-list">
-    <a class="work-row rv" data-title="Sanshé" data-spec="Slot 02 · foto 4:5 · 800×1000" href="https://www.instagram.com/marqe.creative" target="_blank" rel="noopener">
+    <a class="work-row rv" data-title="Sanshé" href="https://www.instagram.com/marqe.creative" target="_blank" rel="noopener">
       <span class="idx">01</span>
-      <span class="thumb"><span class="ph">Sanshé · foto 4:5</span></span>
+      <span class="thumb"></span>
       <span class="nm">
-        <span class="name">Sanshé</span>
+        <span class="name">Sanshé</span><span class="case-link" data-en="MARQÈ on Instagram ↗">MARQÈ na Instagramie ↗</span>
         <span class="type" data-en="Premium beauty salon">Premium beauty salon</span>
       </span>
-      <span class="tags">Brand Strategy · Social Media Management · Meta &amp; Google Ads · AI Content · Photo &amp; Video Production</span>
+      <span class="tags">Brand Strategy · Visual Identity · Meta &amp; Google Ads</span>
       <span class="arrow">→</span>
     </a>
-    <a class="work-row rv" data-title="Kicia" data-spec="Slot 03 · foto 4:5 · 800×1000" href="https://www.instagram.com/marqe.creative" target="_blank" rel="noopener">
+    <a class="work-row rv" data-title="Kicia" href="https://www.instagram.com/marqe.creative" target="_blank" rel="noopener">
       <span class="idx">02</span>
-      <span class="thumb"><span class="ph">Kicia · foto 4:5</span></span>
+      <span class="thumb"></span>
       <span class="nm">
-        <span class="name">Kicia</span>
+        <span class="name">Kicia</span><span class="case-link" data-en="MARQÈ on Instagram ↗">MARQÈ na Instagramie ↗</span>
         <span class="type" data-en="Asian bistro">Bistro azjatyckie</span>
       </span>
-      <span class="tags">Strategy · Social Media Management · Meta &amp; Google Ads · Performance Marketing</span>
+      <span class="tags">Positioning · Visual Direction · Meta &amp; Google Ads</span>
       <span class="arrow">→</span>
     </a>
     
@@ -558,7 +592,8 @@ html:not(.js) .film-controls{display:none}
           <button type="button" class="chip" data-v="Meta / Google Ads">Meta / Google Ads</button>
           <button type="button" class="chip" data-v="AI Photo &amp; Video Production" data-en="AI photo &amp; video">Zdjęcia i wideo AI</button>
           <button type="button" class="chip" data-v="Produkcja foto/wideo" data-en="Photo/video production">Produkcja foto/wideo</button>
-          <button type="button" class="chip" data-v="Strategia marki" data-en="Brand strategy">Strategia marki</button>
+          <button type="button" class="chip" data-v="Strategia marki" data-en="Brand strategy &amp; visual identity">Strategia i wizerunek marki</button>
+          <button type="button" class="chip" data-v="Google Business Profile" data-en="Google Business Profile">Profil Firmy w Google</button>
 
         </div>
       </div>
@@ -597,26 +632,19 @@ html:not(.js) .film-controls{display:none}
       </div>
 
       <p class="f-err" id="f-err" role="alert"></p><p class="form-note" data-en="This form prepares an email in your mail app. You will send it there. You can also write directly to marqepragency@gmail.com.">Formularz przygotuje wiadomość w Twoim programie pocztowym. Wyślesz ją stamtąd. Możesz też napisać bezpośrednio na marqepragency@gmail.com.</p>
-      <button type="button" class="btn submit" id="f-send"><span class="tx"><span class="l" data-en="Prepare email">Przygotuj wiadomość</span><span class="l l2" data-en="Prepare email">Przygotuj wiadomość</span></span></button>
+      <button type="button" class="btn submit" id="f-send"><span class="tx"><span class="l" data-en="Prepare email">Przygotuj wiadomość</span><span aria-hidden="true" class="l l2" data-en="Prepare email">Przygotuj wiadomość</span></span></button>
       <p class="f-sent" id="f-sent" role="status" data-en="Your email app should open with the brief filled in — just press send.">Otworzy się Twój program pocztowy z gotowym briefem — wystarczy nacisnąć „wyślij”.</p>
     </div>
   </div>
 
   <div class="foot">
     <span>MARQÈ © 2026 · Warszawa · Worldwide</span>
-    <a href="wyniki.html" data-en="Results">Wyniki</a>
     <a href="polityka-prywatnosci.html" data-en="Privacy policy (RODO/GDPR)">Polityka prywatności (RODO)</a>
     <a href="https://www.instagram.com/marqe.creative" target="_blank" rel="noopener">Instagram — @marqe.creative</a>
   </div>
 </section>
 
-<div class="cookies" id="cookies">
-  <p data-en-html='Only essential cookies. Analytics — with your consent. <a href="polityka-prywatnosci.html">Privacy policy</a>.'>Tylko niezbędne pliki cookie. Analityczne — za Twoją zgodą. <a href="polityka-prywatnosci.html">Polityka prywatności</a>.</p>
-  <div class="cbtns">
-    <button class="cbtn" id="ck-min" data-en="Essential only">Tylko niezbędne</button>
-    <button class="cbtn primary" id="ck-all" data-en="Accept all">Akceptuję wszystkie</button>
-  </div>
-</div>
+
 
 <script>
 (function(){
@@ -651,9 +679,9 @@ html:not(.js) .film-controls{display:none}
     document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute(l==='en'?'data-en':'data-pl')});
     document.querySelectorAll('[data-en-html]').forEach(function(el){el.innerHTML=el.getAttribute(l==='en'?'data-en-html':'data-pl-html')});
     document.querySelectorAll('[data-en-ph]').forEach(function(el){el.setAttribute('placeholder',el.getAttribute(l==='en'?'data-en-ph':'data-pl-ph'))});
-    fixOrphans(document.body);
-    ['lng-pl','m-lng-pl'].forEach(function(id){var b=document.getElementById(id);if(b)b.classList.toggle('on',l==='pl')});
-    ['lng-en','m-lng-en'].forEach(function(id){var b=document.getElementById(id);if(b)b.classList.toggle('on',l==='en')});
+    if(l==='pl')fixOrphans(document.body);
+    ['lng-pl','m-lng-pl'].forEach(function(id){var b=document.getElementById(id);if(b){b.classList.toggle('on',l==='pl');b.setAttribute('aria-pressed',l==='pl')}});
+    ['lng-en','m-lng-en'].forEach(function(id){var b=document.getElementById(id);if(b){b.classList.toggle('on',l==='en');b.setAttribute('aria-pressed',l==='en')}});
   }
   ['lng-pl','m-lng-pl'].forEach(function(id){var b=document.getElementById(id);if(b)b.addEventListener('click',function(){setLang('pl')})});
   ['lng-en','m-lng-en'].forEach(function(id){var b=document.getElementById(id);if(b)b.addEventListener('click',function(){setLang('en')})});
@@ -662,20 +690,33 @@ html:not(.js) .film-controls{display:none}
 
   /* ---------- mobile menu ---------- */
   var burger=document.getElementById('burger'),mMenu=document.getElementById('m-menu');
-  function closeMenu(){document.documentElement.classList.remove('menu-open');burger.setAttribute('aria-expanded','false');mMenu.setAttribute('aria-hidden','true')}
+  function closeMenu(){document.documentElement.classList.remove('menu-open');burger.setAttribute('aria-expanded','false');mMenu.setAttribute('aria-hidden','true');mMenu.inert=true;}
   burger.addEventListener('click',function(){
     var open=document.documentElement.classList.toggle('menu-open');
-    burger.setAttribute('aria-expanded',open);mMenu.setAttribute('aria-hidden',!open);
-    if(open){mMenu.querySelectorAll('a').forEach(function(a,i){a.style.transitionDelay=(120+i*70)+'ms'})}
+    burger.setAttribute('aria-expanded',open);mMenu.setAttribute('aria-hidden',!open);mMenu.inert=!open;
+    if(open){mMenu.querySelector('a').focus();mMenu.querySelectorAll('a').forEach(function(a,i){a.style.transitionDelay=(120+i*70)+'ms'})}
   });
   mMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu)});
   document.addEventListener('keydown',function(e){
     if(e.key==='Escape'&&document.documentElement.classList.contains('menu-open')){closeMenu();burger.focus();}
   });
 
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Tab'||!document.documentElement.classList.contains('menu-open'))return;
+    var targets=[burger].concat(Array.from(mMenu.querySelectorAll('a,button')));
+    var first=targets[0],last=targets[targets.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  });
+  addEventListener('resize',function(){if(innerWidth>1100)closeMenu();});
+
   var hero=document.querySelector('.hero');
   var filmNav=document.querySelector('.nav');
-  function updateFilmNav(){filmNav.classList.toggle('over-film',window.scrollY<hero.offsetHeight-70);}
+  function updateFilmNav(){
+    filmNav.classList.toggle('over-film',window.scrollY<hero.offsetHeight-100);
+    var services=document.getElementById('services').getBoundingClientRect();
+    filmNav.classList.toggle('over-dark',services.top<100&&services.bottom>100);
+  }
   addEventListener('scroll',updateFilmNav,{passive:true});
   addEventListener('resize',updateFilmNav);updateFilmNav();
   document.querySelectorAll('#wordmark .ch').forEach(function(c,i){c.style.transitionDelay=(i*35)+'ms'});
@@ -762,7 +803,7 @@ html:not(.js) .film-controls{display:none}
 
   /* ---------- cursor-follow preview (desktop) ---------- */
   var pv=document.getElementById('preview'),work=document.getElementById('work');
-  if(canHover&&!reduce&&pv){
+  if(canHover&&!reduce&&pv&&document.querySelector('.work-row[data-img]')){
     var px=0,py=0,tx2=0,ty2=0,pvSeen=false;
     work.addEventListener('mousemove',function(e){tx2=e.clientX+28;ty2=e.clientY-160;});
     (function loop(){px+=(tx2-px)*.12;py+=(ty2-py)*.12;
@@ -772,6 +813,7 @@ html:not(.js) .film-controls{display:none}
         tx2=e.clientX+28;ty2=e.clientY-160;
         if(!pvSeen){px=tx2;py=ty2;pvSeen=true;}
         var src=row.getAttribute('data-img');
+        if(!src)return;
         if(src){pv.innerHTML='<img src="'+src+'" alt="">';}
         else{pv.innerHTML='<div class="ph"><span class="t">'+(row.getAttribute('data-title')||'')+'</span><span class="spec">'+(row.getAttribute('data-spec')||'')+'</span></div><div class="frame"></div>';}
         pv.classList.add('on');
@@ -820,7 +862,7 @@ html:not(.js) .film-controls{display:none}
     else if(!name)bad=E.name;
     else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email))bad=E.email;
     else if(!consent.classList.contains('on'))bad=E.consent;
-    if(bad){err.textContent=bad;err.classList.add('show');return;}
+    if(bad){err.textContent=bad;err.classList.add('show');err.setAttribute('tabindex','-1');err.focus();return;}
     err.classList.remove('show');
     var subject='Brief — '+(brand||name);
     var body=(lang==='en'
@@ -848,11 +890,7 @@ html:not(.js) .film-controls{display:none}
     location.href=href;
   });
 
-  /* ---------- cookie bar ---------- */
-  var ck=document.getElementById('cookies');
-  setTimeout(function(){ck.classList.add('show')},1600);
-  document.getElementById('ck-min').addEventListener('click',function(){ck.classList.remove('show')});
-  document.getElementById('ck-all').addEventListener('click',function(){ck.classList.remove('show')});
+
 })();
 </script>
 </body>
