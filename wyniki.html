@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wyniki — MARQÈ</title>
-<meta name="description" content="Realne wyniki kampanii MARQÈ — dane z Meta Ads dla marek SANSHÉ i KICIA.">
+<meta name="robots" content="noindex">
+<meta name="description" content="MARQÈ — wyniki i cele współpracy.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -94,6 +95,8 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
   *,*::before,*::after{animation:none!important;transition:none!important}
   .card{opacity:1!important;transform:none!important}
 }
+
+.nav{mix-blend-mode:normal;background:#fff;color:#0a0a0a}.nav ul a::after{background:currentColor}.nav .lng button{min-width:36px;min-height:44px;opacity:.7}.nav .lng button.on{opacity:1}.nav .right{gap:20px}.nav a{min-height:44px;display:inline-flex;align-items:center}:focus-visible{outline:2px solid currentColor;outline-offset:4px}@media(max-width:760px){.nav{flex-wrap:wrap;gap:12px;padding:18px 22px}.nav .right{flex-wrap:wrap;gap:12px}.nav ul{gap:16px}header.page{padding-top:180px}}
 </style>
 </head>
 <body>
@@ -116,34 +119,8 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
 <header class="page">
   <p class="lead micro" data-en="Selected results">Wybrane wyniki</p>
   <h1><em class="sx" data-en="Campaign results">Wyniki kampanii</em><span data-en=" — Meta Ads."> — Meta Ads.</span></h1>
-  <p class="note" data-en="Selected results for SANSHÉ and KICIA. The figures below come from the earlier site version and await verification against campaign reports.">Wybrane wyniki dla SANSHÉ i KICIA. Poniższe dane pochodzą z wcześniejszej wersji strony i wymagają weryfikacji z raportami kampanii.</p>
+  <p class="note" data-en="We are preparing detailed case studies. Tell us about your business — we will discuss relevant experience and the goals of a potential collaboration.">Przygotowujemy szczegółowe opisy realizacji. Opowiedz nam o swojej firmie — porozmawiamy o doświadczeniu istotnym dla Twojego projektu i celach współpracy.</p>
 </header>
-
-<div class="grid" id="grid">
-
-  <!-- project cards -->
-  <div class="card" data-series="sanshe">
-    <div class="p-head"><span class="p-name">Sanshé</span><span class="p-type" data-en="Premium beauty salon">Premium beauty salon</span></div>
-    <div class="p-metrics">
-      <div class="p-m"><div class="v"><span class="cnt" data-v="2.30" data-dec="2">0</span>%</div><div class="k">CTR</div></div>
-      <div class="p-m"><div class="v"><span class="cnt" data-v="0.51" data-dec="2">0</span> zł</div><div class="k">CPC</div></div>
-      <div class="p-m"><div class="v cnt" data-v="76569">0</div><div class="k" data-en="Reach">Zasięg</div></div>
-      <div class="p-m"><div class="v cnt" data-v="3033">0</div><div class="k" data-en="Link clicks">Kliknięcia w link</div></div>
-    </div>
-    <svg viewBox="0 0 300 60" preserveAspectRatio="none" style="height:60px"><polyline class="chart-line draw" points=""/></svg>
-  </div>
-  <div class="card" data-series="kicia">
-    <div class="p-head"><span class="p-name">Kicia</span><span class="p-type" data-en="Asian bistro">Bistro azjatyckie</span></div>
-    <div class="p-metrics">
-      <div class="p-m"><div class="v"><span class="cnt" data-v="3.80" data-dec="2">0</span>%</div><div class="k">CTR</div></div>
-      <div class="p-m"><div class="v"><span class="cnt" data-v="0.22" data-dec="2">0</span> zł</div><div class="k">CPC</div></div>
-      <div class="p-m"><div class="v cnt" data-v="243447">0</div><div class="k" data-en="Reach">Zasięg</div></div>
-      <div class="p-m"><div class="v cnt" data-v="19156">0</div><div class="k" data-en="Link clicks">Kliknięcia w link</div></div>
-    </div>
-    <svg viewBox="0 0 300 60" preserveAspectRatio="none" style="height:60px"><polyline class="chart-line draw" points=""></polyline></svg>
-  </div>
-
-</div>
 
 <div style="padding:0 var(--pad) 64px">
   <div style="border-top:1px solid var(--line);padding-top:40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
@@ -151,7 +128,7 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
     <a class="btn-r" href="index.html#contact" data-en="Send a brief &rarr;">Wyślij brief &rarr;</a>
   </div>
 </div>
-<p class="src" data-en="Reporting period and source will be confirmed during the case study update.">Okres raportowania i źródło danych potwierdzimy podczas aktualizacji studiów przypadku.</p>
+
 
 <div class="foot">
   <span>MARQÈ © 2026 · Warszawa</span>
@@ -193,100 +170,6 @@ header.page .note{margin-top:var(--s3);color:var(--grey);max-width:50ch;font-siz
   document.getElementById('lng-pl').addEventListener('click',function(){setLang('pl')});
   document.getElementById('lng-en').addEventListener('click',function(){setLang('en')});
 
-  /* ---- real weekly data (Meta Ads API, 20.05–17.08.2026) ---- */
-  var W={
-    sanshe:[0,313,21527,6678,0,0,21271,15176,23357,3731,49783,50261,23865],
-    kicia:[0,0,26865,27338,20858,28338,36699,53447,43542,77216,117076,131502,160645],
-  };
-
-  function pts(data,w,h,pad){
-    var max=Math.max.apply(null,data),n=data.length;
-    return data.map(function(v,i){
-      var x=(i/(n-1))*w;
-      var y=h-pad-(v/max)*(h-pad*2);
-      return x.toFixed(1)+','+y.toFixed(1);
-    });
-  }
-  function setLine(el,data,w,h){el.setAttribute('points',pts(data,w,h,8).join(' '))}
-
-  document.querySelector('[data-series="sanshe"] polyline').setAttribute('points',pts(W.sanshe,300,60,6).join(' '));
-  document.querySelector('[data-series="kicia"] polyline').setAttribute('points',pts(W.kicia,300,60,6).join(' '));
-
-  /* bars */
-  function bars(id,data,w,h){
-    var g=document.getElementById(id),max=Math.max.apply(null,data),n=data.length,bw=w/n*0.55;
-    data.forEach(function(v,i){
-      var bh=(v/max)*(h-6);
-      var r=document.createElementNS('http://www.w3.org/2000/svg','rect');
-      r.setAttribute('x',(i/n)*w+((w/n)-bw)/2);
-      r.setAttribute('y',h-bh);r.setAttribute('width',bw);r.setAttribute('height',bh);
-      r.setAttribute('fill','#fff');r.setAttribute('opacity','0.85');
-      r.style.transformOrigin='center bottom';r.style.transformBox='fill-box';
-      if(!reduce){r.style.transform='scaleY(0)';r.style.transition='transform .9s cubic-bezier(.22,1,.36,1) '+(i*45)+'ms';}
-      g.appendChild(r);
-    });
-  }
-
-  /* line draw prep */
-  document.querySelectorAll('polyline.draw').forEach(function(p){
-    var len=p.getTotalLength();
-    p.style.strokeDasharray=len;
-    if(!reduce)p.style.strokeDashoffset=len;
-  });
-
-  /* gauge prep — 3.38% on a 0–5% scale */
-
-
-  /* count-up */
-  function fmt(v,dec){
-    if(dec)return v.toFixed(dec).replace('.',',');
-    return Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'\u00A0');
-  }
-  function countUp(el){
-    var target=parseFloat(el.getAttribute('data-v')),dec=parseInt(el.getAttribute('data-dec')||'0');
-    if(reduce){el.textContent=fmt(target,dec);return;}
-    var t0=null,D=1500;
-    function step(t){
-      if(!t0)t0=t;
-      var p=Math.min(1,(t-t0)/D);
-      var e=1-Math.pow(1-p,3);
-      el.textContent=fmt(target*e,dec);
-      if(p<1)requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-
-  /* reveal on scroll: card in → counts, lines, bars, gauge */
-  var seen=new Set();
-  function activate(card){
-    if(seen.has(card))return;seen.add(card);
-    card.classList.add('in');
-    card.querySelectorAll('.cnt').forEach(countUp);
-    card.querySelectorAll('polyline.draw').forEach(function(p){
-      p.style.transition='stroke-dashoffset 1.8s cubic-bezier(.22,1,.36,1) .2s';
-      requestAnimationFrame(function(){p.style.strokeDashoffset=0});
-    });
-    card.querySelectorAll('rect').forEach(function(r){requestAnimationFrame(function(){r.style.transform='scaleY(1)'})});
-
-  }
-  var cards=document.querySelectorAll('.card');
-  if('IntersectionObserver'in window&&!reduce){
-    var io=new IntersectionObserver(function(es){
-      es.forEach(function(e){if(e.isIntersecting){activate(e.target);io.unobserve(e.target);}});
-    },{threshold:.25});
-    cards.forEach(function(c,i){
-      c.style.transitionDelay=(i%3*90)+'ms';
-      io.observe(c);
-    });
-    /* jump-scroll safety: activate anything already passed or on screen */
-    addEventListener('scroll',function(){
-      cards.forEach(function(c){
-        if(!seen.has(c)&&c.getBoundingClientRect().top<innerHeight)activate(c);
-      });
-    },{passive:true});
-  }else{
-    cards.forEach(activate);
-  }
 })();
 </script>
 </body>
