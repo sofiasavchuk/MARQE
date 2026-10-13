@@ -396,6 +396,9 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
 /* Clip decorative motion without making the hero a focus-scroll container. */
 .hero{overflow:clip}
 .hero-media{overflow:hidden}
+
+/* A softly illuminated wordmark, visible as the film begins. */
+.hero h1{text-shadow:0 0 18px rgba(255,255,255,.24),0 0 48px rgba(255,255,255,.12),0 2px 24px rgba(0,0,0,.35)}
 </style>
 </head>
 <body>
@@ -786,7 +789,7 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
           video.playbackRate=.35+.65*t*t*(3-2*t);
         }
       }
-      if(isFinite(video.duration)&&video.currentTime>=(variant==='1'?8.1:(variant==='3'?6.09:8.7))&&!revealed)reveal();
+      if(video.currentTime>=.25&&!revealed)reveal();
     });
     video.addEventListener('ended',function(){
       if(motion.matches){finish();return;}
