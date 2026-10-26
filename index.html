@@ -448,12 +448,15 @@ section[id]{scroll-margin-top:24px}
 .case-details summary{cursor:pointer;padding:16px 0;min-height:44px;border-top:1px solid var(--line);font-size:15px}
 .case-details[open] summary{margin-bottom:12px}
 .case-source{font-size:12px;line-height:1.6;opacity:.65;margin-top:16px}
-@media(max-width:640px){.case-visuals{grid-column:1/-1}.case-compare{gap:12px;grid-template-columns:1fr}.case-compare figure{padding:16px}.case-compare .start-image{max-height:300px}.case-metric{gap:12px}.case-current-grid{aspect-ratio:auto}.case-metric strong{font-size:48px}}
+@media(max-width:640px){.case-visuals{grid-column:1/-1}.case-compare{gap:12px;grid-template-columns:1fr}.case-compare figure{padding:16px}.case-compare .start-image{max-height:300px}.case-metric{gap:12px}.case-current-grid{aspect-ratio:auto}.case-metric strong{font-size:clamp(27px,7vw,44px)}}
 
+
+.nav .lng{gap:2px}.nav .lng .sep{display:none}.m-lng{display:flex;gap:8px}.m-lng button{min-width:44px;min-height:44px}html:lang(ru) .sx,html:lang(uk) .sx{font-family:Georgia,serif}html:lang(ru) .contact-heading,html:lang(uk) .contact-heading{font-size:clamp(28px,3.6vw,52px)!important}
 </style>
 </head>
 <body>
 <a class="skip-link" href="#contact" data-en="Skip to contact">Przejdź do kontaktu</a>
+<script src="assets/translations.js"></script>
 <script>document.documentElement.classList.add('js')</script>
 
 <nav class="nav">
@@ -465,7 +468,7 @@ section[id]{scroll-margin-top:24px}
       <li><a href="#contact" data-en="Contact">Kontakt</a></li>
     </ul>
     <div class="lng" role="group" aria-label="Language">
-      <button id="lng-pl" class="on" type="button">PL</button><span class="sep">/</span><button id="lng-en" type="button">EN</button>
+      <button id="lng-pl" class="on" type="button">PL</button><span class="sep">/</span><button id="lng-en" type="button">EN</button><button id="lng-ru" type="button">RU</button><button id="lng-uk" type="button">UA</button>
     </div>
     <button class="burger" id="burger" aria-controls="m-menu" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   </div>
@@ -477,7 +480,7 @@ section[id]{scroll-margin-top:24px}
   <a href="#contact" data-en="Contact">Kontakt</a>
   <div class="m-lng">
     <button id="m-lng-pl" class="on" type="button">PL</button>
-    <button id="m-lng-en" type="button">EN</button>
+    <button id="m-lng-en" type="button">EN</button><button id="m-lng-ru" type="button">RU</button><button id="m-lng-uk" type="button">UA</button>
   </div>
 </div>
 
@@ -610,7 +613,7 @@ section[id]{scroll-margin-top:24px}
         <span class="a-idx">04</span><span class="a-name" data-en="Photo &amp; video production">Produkcja foto i wideo</span><span class="a-plus" aria-hidden="true"></span>
       </button>
       <div class="acc-body"><div class="acc-clip"><div class="acc-in">
-        <div class="a-it"><span class="a-arrow">→</span><div><div class="a-t">Photo &amp; Video Production</div><p class="a-d" data-en="Organising and delivering professional photo shoots and video production.">Organizacja i realizacja profesjonalnych sesji zdjęciowych oraz produkcji wideo.</p></div></div>
+        <div class="a-it"><span class="a-arrow">→</span><div><div class="a-t" data-en="Photo &amp; Video Production">Photo &amp; Video Production</div><p class="a-d" data-en="Organising and delivering professional photo shoots and video production.">Organizacja i realizacja profesjonalnych sesji zdjęciowych oraz produkcji wideo.</p></div></div>
         <div class="a-it"><span class="a-arrow">→</span><div><div class="a-t" data-en="Concept &amp; shoot planning">Koncepcja i przygotowanie sesji</div><p class="a-d" data-en="We develop the concept, moodboard and shot list, and coordinate production with our photographer and videographer partners in Warsaw.">Przygotowujemy pomysł, moodboard i plan ujęć. Koordynujemy realizację z fotografami i wideografami współpracującymi z nami w Warszawie.</p></div></div>
         <div class="a-it"><span class="a-arrow">→</span><div><div class="a-t" data-en="Brand photography &amp; short video">Zdjęcia i krótkie wideo dla marki</div><p class="a-d" data-en="We capture products, interiors and the atmosphere of your business, preparing content for social media and advertising in the formats each channel needs.">Pokazujemy produkty, wnętrza i atmosferę Twojego miejsca. Przygotowujemy materiały do social media i reklam, w formatach dopasowanych do kanałów publikacji.</p></div></div>
       </div></div></div>
@@ -736,22 +739,37 @@ section[id]{scroll-margin-top:24px}
     }
   }
 
-  /* ---------- i18n PL/EN ---------- */
+  /* ---------- i18n PL / EN / RU / UA ---------- */
   var lang='pl';
+  var translations=window.MARQE_TRANSLATIONS||{};
+  function translated(en,l){var value=translations[en.trim()];return value&&value[l]||en;}
   document.querySelectorAll('[data-en]').forEach(function(el){el.setAttribute('data-pl',el.innerHTML)});
   document.querySelectorAll('[data-en-html]').forEach(function(el){el.setAttribute('data-pl-html',el.innerHTML)});
   document.querySelectorAll('[data-en-ph]').forEach(function(el){el.setAttribute('data-pl-ph',el.getAttribute('placeholder'))});
   function setLang(l){
+    if(!['pl','en','ru','uk'].includes(l))l='pl';
     lang=l;document.documentElement.lang=l;
-    document.querySelectorAll('[data-en]').forEach(function(el){el.innerHTML=el.getAttribute(l==='en'?'data-en':'data-pl')});
-    document.querySelectorAll('[data-en-html]').forEach(function(el){el.innerHTML=el.getAttribute(l==='en'?'data-en-html':'data-pl-html')});
-    document.querySelectorAll('[data-en-ph]').forEach(function(el){el.setAttribute('placeholder',el.getAttribute(l==='en'?'data-en-ph':'data-pl-ph'))});
+    ['', '-html','-ph'].forEach(function(suffix){
+      document.querySelectorAll('[data-en'+suffix+']').forEach(function(el){
+        var value=l==='pl'?el.getAttribute('data-pl'+suffix):l==='en'?el.getAttribute('data-en'+suffix):translated(el.getAttribute('data-en'+suffix),l);
+        if(suffix==='-ph')el.setAttribute('placeholder',value);else el.innerHTML=value;
+      });
+    });
+    if(l==='ru'||l==='uk'){
+      document.querySelector('.contact-heading>span').textContent=l==='ru'?'Поговорим':'Поговорімо';
+      document.querySelector('.svc-h>span').textContent+=' ';
+    }
+    ['pl','en','ru','uk'].forEach(function(code){['lng-','m-lng-'].forEach(function(prefix){var b=document.getElementById(prefix+code);if(b){b.classList.toggle('on',l===code);b.setAttribute('aria-pressed',String(l===code))}})});
+    document.querySelectorAll('.case-compare img').forEach(function(img){if(!img.dataset.originalAlt)img.dataset.originalAlt=img.alt;var brand=img.alt.split(':')[0];img.alt=l==='pl'?img.dataset.originalAlt:brand+': '+(img.classList.contains('start-image')?({en:'Starting profile, zero followers',ru:'Профиль на старте, ноль подписчиков',uk:'Профіль на старті, нуль підписників'}[l]):({en:'Current Instagram profile and content',ru:'Текущий профиль и контент Instagram',uk:'Поточний профіль і контент Instagram'}[l]));});
+    document.querySelectorAll('.case-compare a').forEach(function(a){a.setAttribute('aria-label',({pl:'Otwórz obraz w nowej karcie',en:'Open image in a new tab',ru:'Открыть изображение в новой вкладке',uk:'Відкрити зображення в новій вкладці'})[l])});
+    var err=document.getElementById('f-err');if(err){err.textContent='';err.classList.remove('show')}
     if(l==='pl')fixOrphans(document.body);
-    ['lng-pl','m-lng-pl'].forEach(function(id){var b=document.getElementById(id);if(b){b.classList.toggle('on',l==='pl');b.setAttribute('aria-pressed',l==='pl')}});
-    ['lng-en','m-lng-en'].forEach(function(id){var b=document.getElementById(id);if(b){b.classList.toggle('on',l==='en');b.setAttribute('aria-pressed',l==='en')}});
+    try{localStorage.setItem('marqe-language',l);var url=new URL(location.href);url.searchParams.set('lang',l);history.replaceState(null,'',url)}catch(e){}
   }
-  ['lng-pl','m-lng-pl'].forEach(function(id){var b=document.getElementById(id);if(b)b.addEventListener('click',function(){setLang('pl')})});
-  ['lng-en','m-lng-en'].forEach(function(id){var b=document.getElementById(id);if(b)b.addEventListener('click',function(){setLang('en')})});
+  ['pl','en','ru','uk'].forEach(function(code){['lng-','m-lng-'].forEach(function(prefix){var b=document.getElementById(prefix+code);if(b)b.addEventListener('click',function(){setLang(code)})})});
+  var requestedLang=new URLSearchParams(location.search).get('lang');
+  try{requestedLang=requestedLang||localStorage.getItem('marqe-language')}catch(e){}
+  setLang(requestedLang==='ua'?'uk':requestedLang||'pl');
 
   fixOrphans(document.body);
 
@@ -808,7 +826,7 @@ section[id]{scroll-margin-top:24px}
     var motion=matchMedia('(prefers-reduced-motion: reduce)');
     var revealed=true,watchdog,finished=false,skipRequested=false,resumeOnVisible=false;
     video.loop=!motion.matches;
-    function setLabel(pl,en){toggle.setAttribute('data-pl',pl);toggle.setAttribute('data-en',en);toggle.textContent=lang==='en'?en:pl;}
+    function setLabel(pl,en){toggle.setAttribute('data-pl',pl);toggle.setAttribute('data-en',en);toggle.textContent=lang==='pl'?pl:translated(en,lang);}
     function reveal(){
       revealed=true;hero.classList.add('in');
       skip.hidden=true;replay.hidden=false;
@@ -940,11 +958,13 @@ section[id]{scroll-margin-top:24px}
     pl:{scope:'Wybierz przynajmniej jeden zakres.',budget:'Zaznacz budżet miesięczny.',name:'Podaj imię.',email:'Podaj poprawny e-mail.',consent:'Zaznacz zgodę RODO.'},
     en:{scope:'Pick at least one scope.',budget:'Select a monthly budget.',name:'Enter your name.',email:'Enter a valid e-mail.',consent:'Please accept the GDPR consent.'}
   };
+  ERR.ru={scope:'Выберите хотя бы одну услугу.',name:'Укажите имя.',email:'Укажите корректный e-mail.',consent:'Подтвердите согласие на обработку персональных данных.'};
+  ERR.uk={scope:'Оберіть хоча б одну послугу.',name:'Вкажіть ім’я.',email:'Вкажіть коректний e-mail.',consent:'Підтвердьте згоду на обробку персональних даних.'};
   // Set the public Formspree endpoint after the agency creates its form.
   var FORM_ENDPOINT = 'https://formspree.io/f/moeeewnb';
   document.getElementById('f-send').addEventListener('click',async function(){
     var err=document.getElementById('f-err'),E=ERR[lang];
-    var scope=[].map.call(document.querySelectorAll('#scopeChips .chip.on'),function(c){return lang==='en'?c.textContent.trim():c.getAttribute('data-v')});
+    var scope=[].map.call(document.querySelectorAll('#scopeChips .chip.on'),function(c){return c.textContent.trim()});
     var budget=document.querySelector('#budgetChips .chip.on');
     var name=document.getElementById('f-name').value.trim();
     var brand=document.getElementById('f-brand').value.trim();
@@ -960,9 +980,9 @@ section[id]{scroll-margin-top:24px}
     if(bad){err.textContent=bad;err.classList.add('show');err.setAttribute('tabindex','-1');err.focus();return;}
     err.classList.remove('show');
     var subject='Brief — '+(brand||name);
-    var body=(lang==='en'
-      ? 'Scope: '+scope.join(', ')+'\nBudget for MARQÈ services (excluding ad spend): '+(budget?(lang==='en'?budget.textContent.trim():budget.getAttribute('data-v')):(lang==='en'?'To discuss':'Do ustalenia'))+'\n\nAbout the brand:\n'+msg+'\n\nName: '+name+'\nBrand: '+brand+'\nE-mail: '+email+(phone?'\nPhone: '+phone:'')+'\n\nGDPR consent: yes'
-      : 'Zakres: '+scope.join(', ')+'\nBudżet na usługi MARQÈ (bez budżetu reklamowego): '+(budget?(lang==='en'?budget.textContent.trim():budget.getAttribute('data-v')):(lang==='en'?'To discuss':'Do ustalenia'))+'\n\nO marce:\n'+msg+'\n\nImię: '+name+'\nMarka: '+brand+'\nE-mail: '+email+(phone?'\nTelefon: '+phone:'')+'\n\nZgoda RODO: tak');
+    var body=(lang!=='pl'
+      ? 'Scope: '+scope.join(', ')+'\nBudget for MARQÈ services (excluding ad spend): '+(budget?(budget.textContent.trim()):(lang!=='pl'?translated('Let’s discuss',lang):'Do ustalenia'))+'\n\nAbout the brand:\n'+msg+'\n\nName: '+name+'\nBrand: '+brand+'\nE-mail: '+email+(phone?'\nPhone: '+phone:'')+'\n\nGDPR consent: yes'
+      : 'Zakres: '+scope.join(', ')+'\nBudżet na usługi MARQÈ (bez budżetu reklamowego): '+(budget?(budget.textContent.trim()):(lang!=='pl'?translated('Let’s discuss',lang):'Do ustalenia'))+'\n\nO marce:\n'+msg+'\n\nImię: '+name+'\nMarka: '+brand+'\nE-mail: '+email+(phone?'\nTelefon: '+phone:'')+'\n\nZgoda RODO: tak');
     if(FORM_ENDPOINT){
       var button=this, sent=document.getElementById('f-sent');
       button.disabled=true;
@@ -971,10 +991,10 @@ section[id]{scroll-margin-top:24px}
       try{
         var response=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/json'},body:JSON.stringify({email:email,name:name,brand:brand,phone:phone,message:body,subject:subject})});
         if(!response.ok)throw new Error('Submission failed');
-        sent.textContent=lang==='en'?'Thank you. Your enquiry has been sent.':'Dziękujemy. Twoje zapytanie zostało wysłane.';
+        sent.textContent=lang==='pl'?'Dziękujemy. Twoje zapytanie zostało wysłane.':translated('Thank you. Your enquiry has been sent.',lang);
         sent.classList.add('show');
       }catch(error){
-        err.textContent=lang==='en'?'We could not send your brief. Please try again or email marqepragency@gmail.com.':'Nie udało się wysłać briefu. Spróbuj ponownie lub napisz na marqepragency@gmail.com.';
+        err.textContent=({pl:'Nie udało się wysłać zapytania. Spróbuj ponownie lub napisz na marqepragency@gmail.com.',en:'We could not send your enquiry. Please try again or email marqepragency@gmail.com.',ru:'Не удалось отправить запрос. Попробуйте ещё раз или напишите на marqepragency@gmail.com.',uk:'Не вдалося надіслати запит. Спробуйте ще раз або напишіть на marqepragency@gmail.com.'})[lang];
         err.classList.add('show');
       }finally{button.disabled=false;button.removeAttribute('aria-busy');}
       return;
