@@ -652,8 +652,8 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
 
       <p class="f-err" id="f-err" role="alert"></p>
       <button type="button" class="btn submit" id="f-send"><span class="tx"><span class="l" data-en="Send an enquiry">Wyślij zapytanie</span><span aria-hidden="true" class="l l2" data-en="Send an enquiry">Wyślij zapytanie</span></span></button>
-      <p class="form-note" data-en="Your email app will open with your enquiry ready to send.">Otworzy się aplikacja pocztowa z Twoim zapytaniem — wystarczy je wysłać.</p>
-      <p class="f-sent" id="f-sent" role="status" data-en="Your email app should open with the brief filled in — just press send.">Otworzy się Twój program pocztowy z gotowym briefem — wystarczy nacisnąć „wyślij”.</p>
+      <p class="form-note" data-en="Send your enquiry directly here. We will reply by email.">Wyślij zapytanie bezpośrednio przez formularz. Odpowiemy e-mailem.</p>
+      <p class="f-sent" id="f-sent" role="status" data-en="Thank you. Your enquiry has been sent.">Dziękujemy. Twoje zapytanie zostało wysłane.</p>
     </div>
   </div>
 
@@ -896,7 +896,7 @@ html:not(.js) .acc-body{grid-template-rows:1fr}
     en:{scope:'Pick at least one scope.',budget:'Select a monthly budget.',name:'Enter your name.',email:'Enter a valid e-mail.',consent:'Please accept the GDPR consent.'}
   };
   // Set the public Formspree endpoint after the agency creates its form.
-  var FORM_ENDPOINT = '';
+  var FORM_ENDPOINT = 'https://formspree.io/f/moeeewnb';
   document.getElementById('f-send').addEventListener('click',async function(){
     var err=document.getElementById('f-err'),E=ERR[lang];
     var scope=[].map.call(document.querySelectorAll('#scopeChips .chip.on'),function(c){return c.getAttribute('data-v')});
