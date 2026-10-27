@@ -1,0 +1,18 @@
+/* Isolated font trials. The brand wordmark is intentionally excluded. */
+body.type-trial{font-family:'Manrope',sans-serif}
+.type-trial :is(.s2-title,.svc-h,.contact-heading,.sec-head h2,.a-name,.case-summary,.work-row .name,.hero-tagline){font-family:var(--trial-head)!important;font-weight:var(--trial-weight)!important;text-transform:var(--trial-case);letter-spacing:-.02em;line-height:1.15}
+html body.type-trial .sx{font-family:var(--trial-accent)!important;font-weight:var(--trial-accent-weight)!important;font-style:var(--trial-style)!important;text-transform:none!important;letter-spacing:-.025em;font-synthesis:none}
+.type-trial .contact-heading .sx{display:block;margin-top:10px}
+.type-trial .logo,.type-trial #wordmark,.type-trial .agency-label{font-family:'Jost',sans-serif!important}
+.type-trial.trial-01 .contact-heading .sx{font-size:1.25em;line-height:1.25}
+.type-trial.trial-01 .svc-h .sx{font-size:1.3em}
+.type-trial.trial-03 .contact-heading{font-size:clamp(34px,4vw,60px)!important}
+.type-trial.trial-04{font-family:'IBM Plex Mono',monospace}
+.type-trial.trial-04 :is(.btn,.chip,.linkline,.nav ul a){font-family:'IBM Plex Mono',monospace;letter-spacing:0}
+.type-trial.trial-04 .contact-heading{font-size:clamp(25px,2.8vw,44px)!important}
+.type-trial.trial-04 .contact-heading .sx{text-transform:uppercase!important}
+@media(max-width:640px){.type-trial.trial-03 .contact-heading{font-size:34px!important}.type-trial.trial-04 .contact-heading{font-size:25px!important}.type-trial .a-name{overflow-wrap:break-word!important}}
+body.trial-01,.sample-01{--trial-head:'Oswald',sans-serif;--trial-weight:700;--trial-accent:'Great Vibes',cursive;--trial-accent-weight:400;--trial-style:normal;--trial-case:uppercase}
+body.trial-02,.sample-02{--trial-head:'Manrope',sans-serif;--trial-weight:700;--trial-accent:'Literata',serif;--trial-accent-weight:300;--trial-style:italic;--trial-case:uppercase}
+body.trial-03,.sample-03{--trial-head:'Cormorant Garamond',serif;--trial-weight:500;--trial-accent:'Cormorant Garamond',serif;--trial-accent-weight:400;--trial-style:italic;--trial-case:none}
+body.trial-04,.sample-04{--trial-head:'IBM Plex Mono',monospace;--trial-weight:500;--trial-accent:'IBM Plex Mono',monospace;--trial-accent-weight:400;--trial-style:normal;--trial-case:uppercase}
