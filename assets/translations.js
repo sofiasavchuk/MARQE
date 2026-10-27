@@ -1,1 +1,558 @@
-window.MARQE_TRANSLATIONS={"Skip to contact":{"ru":"Перейти к контактам","uk":"Перейти до контактів"},"Projects":{"ru":"Проекты","uk":"Проєкти"},"Services":{"ru":"Услуги","uk":"Послуги"},"Contact":{"ru":"Контакты","uk":"Контакти"},"Open the door to new possibilities.":{"ru":"Открой дверь новым возможностям","uk":"Відкрий двері до нових можливостей"},"Let’s talk":{"ru":"Обсудим ваш проект","uk":"Обговорімо ваш проєкт"},"Pause":{"ru":"Пауза","uk":"Пауза"},"Skip intro":{"ru":"Пропустить вступление","uk":"Пропустити вступ"},"Replay film":{"ru":"Смотреть ещё раз","uk":"Переглянути ще раз"},"Marketing that helps you reach your customers.":{"ru":"Маркетинг, который помогает привлекать ваших клиентов.","uk":"Маркетинг, який допомагає залучати ваших клієнтів."},"13 years of experience in the Polish market. We understand the local context and help brands tailor their communication to their audience.":{"ru":"13 лет опыта на польском рынке. Мы понимаем местную аудиторию и помогаем брендам выстраивать с ней общение.","uk":"13 років досвіду на польському ринку. Ми розуміємо місцеву аудиторію й допомагаємо брендам налагоджувати з нею комунікацію."},"We manage social media, create Meta and Google Ads campaigns, and produce photography and video — including AI content.":{"ru":"Ведём соцсети, запускаем рекламные кампании в Meta и Google Ads, создаём фото и видео — в том числе с помощью AI.","uk":"Ведемо соцмережі, запускаємо рекламні кампанії в Meta та Google Ads, створюємо фото й відео — зокрема за допомогою AI."},"Explore our work":{"ru":"Посмотреть наши проекты","uk":"Переглянути наші проєкти"},"Warsaw · Worldwide":{"ru":"Варшава · Worldwide","uk":"Варшава · Worldwide"},"Project managed from the ground up":{"ru":"Работа над проектом с нуля","uk":"Робота над проєктом із нуля"},"Sanshé on Instagram ↗":{"ru":"Sanshé в Instagram ↗","uk":"Sanshé в Instagram ↗"},"Kicia on Instagram ↗":{"ru":"Kicia в Instagram ↗","uk":"Kicia в Instagram ↗"},"Premium beauty salon":{"ru":"Премиальный салон красоты","uk":"Преміальний салон краси"},"Asian bistro":{"ru":"Азиатское бистро","uk":"Азійське бістро"},"From communication concept to the salon’s presence in Poland.":{"ru":"От концепции бренда до продвижения салона на польском рынке.","uk":"Від концепції бренду до просування салону на польському ринку."},"Building the bistro’s presence from its first posts and campaigns.":{"ru":"Развиваем присутствие бистро в интернете — с первых публикаций и рекламных кампаний.","uk":"Розвиваємо присутність бістро в інтернеті — від перших публікацій і рекламних кампаній."},"Explore the scope of work":{"ru":"Что мы сделали","uk":"Що ми зробили"},"Salon communication concept, visual direction and brand adaptation for the Polish market.":{"ru":"Концепция коммуникации салона, визуальный стиль и адаптация бренда к польскому рынку.","uk":"Концепція комунікації салону, візуальний стиль і адаптація бренду до польського ринку."},"Bistro positioning, communication strategy and visual direction tailored to the Polish market.":{"ru":"Позиционирование бистро, стратегия коммуникации и визуальный стиль с учётом польского рынка.","uk":"Позиціонування бістро, стратегія комунікації та візуальний стиль з урахуванням польського ринку."},"Instagram launched and managed from scratch — profile setup, visual direction, publishing and community growth.":{"ru":"Создание и ведение Instagram с нуля: настройка и оформление профиля, публикации и развитие сообщества.","uk":"Створення та ведення Instagram з нуля: налаштування й оформлення профілю, публікації та розвиток спільноти."},"Google Business Profile creation, setup and optimisation.":{"ru":"Создание, заполнение и оптимизация профиля компании в Google.","uk":"Створення, заповнення та оптимізація профілю компанії в Google."},"Content production: selecting photographers and videographers, concepts, scripts and shoot coordination.":{"ru":"Организация производства контента: подбор фотографов и видеографов, разработка концепций и сценариев, координация съёмок.","uk":"Організація створення контенту: добір фотографів і відеографів, розроблення концепцій і сценаріїв, координація зйомок."},"AI content and creative assets for social media and advertising.":{"ru":"Создание AI-контента и материалов для социальных сетей и рекламы.","uk":"Створення AI-контенту й матеріалів для соціальних мереж і реклами."},"Meta Ads and Google Ads launch and management, performance analysis and optimisation.":{"ru":"Запуск и ведение Meta Ads и Google Ads, анализ и оптимизация результатов.","uk":"Запуск і ведення Meta Ads та Google Ads, аналіз і оптимізація результатів."},"The brand name and logo were supplied by the client. Our work focused on market adaptation, communication and digital growth.":{"ru":"Название и логотип предоставил клиент. Мы отвечали за адаптацию бренда к рынку, коммуникацию и продвижение в интернете.","uk":"Назву й логотип надав клієнт. Ми відповідали за адаптацію бренду до ринку, комунікацію та просування в інтернеті."},"0 → approx. 10.4k":{"ru":"0 → около 10,4 тыс.","uk":"0 → близько 10,4 тис."},"0 → 6,776":{"ru":"0 → 6 776","uk":"0 → 6 776"},"Instagram followers":{"ru":"подписчиков в Instagram","uk":"підписників в Instagram"},"Starting point":{"ru":"На старте","uk":"На старті"},"Current profile":{"ru":"Сейчас","uk":"Зараз"},"Follower counts shown in the supplied profile screenshots. View the latest profile on Instagram.":{"ru":"Количество подписчиков на представленных скриншотах. Актуальные данные — в Instagram проекта.","uk":"Кількість підписників на представлених скриншотах. Актуальні дані — в Instagram проєкту."},"What":{"ru":"Наши","uk":"Наші"},"we do":{"ru":"компетенции","uk":"компетенції"},"Choose the support your business needs — from social media and advertising to visual direction and content production.":{"ru":"Подключаемся к тем задачам, которые важны вашему бизнесу: ведению соцсетей, рекламе, визуальному оформлению и созданию контента.","uk":"Долучаємося до завдань, важливих для вашого бізнесу: ведення соцмереж, реклами, візуального оформлення та створення контенту."},"Social media management":{"ru":"Ведение социальных сетей","uk":"Ведення соціальних мереж"},"Social Media Strategy":{"ru":"Стратегия социальных сетей","uk":"Стратегія соціальних мереж"},"The brand's social media presence: platforms, content pillars, formats, communication, posting frequency and account growth.":{"ru":"Определяем, как бренд будет представлен в соцсетях: выбираем платформы, темы, форматы, стиль общения, частоту публикаций и способы развития аккаунта.","uk":"Визначаємо, як бренд буде представлений у соцмережах: обираємо платформи, теми, формати, стиль спілкування, частоту публікацій і способи розвитку акаунта."},"Social Media Management (SMM)":{"ru":"Ведение социальных сетей (SMM)","uk":"Ведення соціальних мереж (SMM)"},"Social media management (SMM)":{"ru":"Ведение соцсетей (SMM)","uk":"Ведення соцмереж (SMM)"},"End-to-end social media management — planning, publishing, content coordination and day-to-day brand communication.":{"ru":"Берём на себя ведение соцсетей: планируем и публикуем материалы, координируем создание контента и общаемся с аудиторией от имени бренда.","uk":"Беремо на себе ведення соцмереж: плануємо й публікуємо матеріали, координуємо створення контенту та спілкуємося з аудиторією від імені бренду."},"Content Strategy":{"ru":"Контент-стратегия","uk":"Контент-стратегія"},"Planning what content the brand should create, for whom and to what end.":{"ru":"Определяем, какой контент нужен бренду, для кого и с какой целью.","uk":"Визначаємо, який контент потрібен бренду, для кого та з якою метою."},"Community Management":{"ru":"Работа с сообществом","uk":"Робота зі спільнотою"},"Building and running the brand's community — comments, messages, audience engagement.":{"ru":"Развиваем сообщество вокруг бренда: отвечаем на комментарии и сообщения, поддерживаем диалог с аудиторией.","uk":"Розвиваємо спільноту навколо бренду: відповідаємо на коментарі й повідомлення, підтримуємо діалог з аудиторією."},"Content & profile design":{"ru":"Контент и оформление профиля","uk":"Контент і оформлення профілю"},"We create copy, graphics and cohesive templates for posts and stories, aligned with your brand and communication plan.":{"ru":"Пишем тексты, создаём графику и шаблоны публикаций и сторис в едином стиле, с учётом характера бренда и задач коммуникации.","uk":"Пишемо тексти, створюємо графіку й шаблони дописів і сторіс у єдиному стилі, з урахуванням характеру бренду та завдань комунікації."},"Meta & Google Ads":{"ru":"Meta и Google Ads","uk":"Meta та Google Ads"},"Strategy, setup and management of ad campaigns on Facebook and Instagram.":{"ru":"Стратегия, настройка и ведение рекламных кампаний в Facebook и Instagram.","uk":"Стратегія, налаштування й ведення рекламних кампаній у Facebook та Instagram."},"Planning, configuration and optimisation of Google campaigns.":{"ru":"Планирование, настройка и оптимизация кампаний в Google.","uk":"Планування, налаштування й оптимізація кампаній у Google."},"Campaign Optimization":{"ru":"Оптимизация кампаний","uk":"Оптимізація кампаній"},"Results analysis and continuous ad optimisation for cost, sales, leads, traffic or other goals.":{"ru":"Анализируем результаты и корректируем рекламу с учётом ваших целей: стоимости привлечения, продаж, заявок или посещаемости сайта.","uk":"Аналізуємо результати й коригуємо рекламу з урахуванням ваших цілей: вартості залучення, продажів, заявок чи відвідуваності сайту."},"Analytics & Audit":{"ru":"Аналитика и аудит","uk":"Аналітика й аудит"},"Audit of marketing, ads and digital channels plus data analysis and recommendations.":{"ru":"Аудит маркетинга, рекламы и цифровых каналов, анализ данных и рекомендации по дальнейшим действиям.","uk":"Аудит маркетингу, реклами й цифрових каналів, аналіз даних і рекомендації щодо подальших дій."},"Google Business Profile":{"ru":"Профиль компании в Google","uk":"Профіль компанії в Google"},"We create and organise your Google Business Profile, including business details, services and visuals, to help customers find you.":{"ru":"Создаём и оформляем профиль компании в Google: добавляем сведения о бизнесе, услуги и фотографии, чтобы клиентам было проще вас найти.","uk":"Створюємо й оформлюємо профіль компанії в Google: додаємо відомості про бізнес, послуги та фотографії, щоб клієнтам було легше вас знайти."},"Brand strategy & visual direction":{"ru":"Стратегия и визуальный образ бренда","uk":"Стратегія та візуальний образ бренду"},"Analysis & recommendations":{"ru":"Анализ и рекомендации","uk":"Аналіз і рекомендації"},"We get to know your business, goals and current communication. We review your audience and competitors to identify what needs improving and where to focus.":{"ru":"Изучаем ваш бизнес, его цели и текущую коммуникацию. Анализируем аудиторию и конкурентов, чтобы определить, что улучшить и на каких задачах сосредоточиться.","uk":"Вивчаємо ваш бізнес, його цілі та поточну комунікацію. Аналізуємо аудиторію й конкурентів, щоб визначити, що поліпшити та на яких завданнях зосередитися."},"Positioning & communication":{"ru":"Позиционирование и коммуникация","uk":"Позиціонування та комунікація"},"We define who your brand speaks to, what makes it distinctive and how to communicate that. We establish key messages, tone of voice and visual direction.":{"ru":"Определяем аудиторию бренда, его отличия и то, как их подчеркнуть. Формулируем основные сообщения, выбираем стиль общения и визуальное направление.","uk":"Визначаємо аудиторію бренду, його відмінності й те, як їх підкреслити. Формулюємо основні повідомлення, обираємо стиль спілкування та візуальний напрям."},"Action plan":{"ru":"План действий","uk":"План дій"},"We turn these decisions into a practical plan for content, promotional channels and priorities. We tailor the scope to your needs — from refining communication to planning your brand’s entry into the Polish market.":{"ru":"Составляем конкретный план: какие материалы создавать, где продвигаться и с чего начать. Объём работы зависит от ваших задач — от обновления коммуникации до подготовки выхода на польский рынок.","uk":"Складаємо конкретний план: які матеріали створювати, де просуватися та з чого почати. Обсяг роботи залежить від ваших завдань — від оновлення комунікації до підготовки виходу на польський ринок."},"Visual identity":{"ru":"Визуальный стиль","uk":"Візуальний стиль"},"We develop or refresh your visual identity: colours, typography and brand presentation. We keep your profiles, content and advertising materials consistent.":{"ru":"Разрабатываем или обновляем визуальный стиль: цвета, шрифты и оформление бренда. Следим, чтобы профили, публикации и рекламные материалы выглядели целостно.","uk":"Розробляємо або оновлюємо візуальний стиль: кольори, шрифти й оформлення бренду. Дбаємо, щоб профілі, публікації та рекламні матеріали виглядали цілісно."},"Photo & video production":{"ru":"Создание фото и видео","uk":"Створення фото й відео"},"Photo & Video Production":{"ru":"Создание фото и видео","uk":"Створення фото й відео"},"Organising and delivering professional photo shoots and video production.":{"ru":"Организация и проведение профессиональных фотосессий и видеосъёмок.","uk":"Організація та проведення професійних фотосесій і відеозйомок."},"Concept & shoot planning":{"ru":"Концепция и подготовка съёмки","uk":"Концепція та підготовка зйомки"},"We develop the concept, moodboard and shot list, and coordinate production with our photographer and videographer partners in Warsaw.":{"ru":"Разрабатываем идею съёмки, подбираем визуальные ориентиры и составляем план кадров. Организуем работу с фотографами и видеографами, с которыми сотрудничаем в Варшаве.","uk":"Розробляємо ідею зйомки, добираємо візуальні орієнтири та складаємо план кадрів. Організовуємо роботу з фотографами й відеографами, з якими співпрацюємо у Варшаві."},"Brand photography & short video":{"ru":"Фотографии и короткие видео для бренда","uk":"Фотографії та короткі відео для бренду"},"We capture products, interiors and the atmosphere of your business, preparing content for social media and advertising in the formats each channel needs.":{"ru":"Снимаем продукты, интерьеры и атмосферу вашего пространства. Готовим материалы для соцсетей и рекламы с учётом форматов каждой площадки.","uk":"Знімаємо продукти, інтер’єри й атмосферу вашого простору. Готуємо матеріали для соцмереж і реклами з урахуванням форматів кожного майданчика."},"AI Photo & Video Production":{"ru":"Создание фото и видео с AI","uk":"Створення фото й відео з AI"},"AI imagery":{"ru":"Изображения с помощью AI","uk":"Зображення за допомогою AI"},"Product and brand imagery created with AI, with art direction tailored to your brand.":{"ru":"Создаём изображения продуктов и имиджевые материалы с помощью AI. Визуальную концепцию разрабатываем под характер вашего бренда.","uk":"Створюємо зображення продуктів та іміджеві матеріали за допомогою AI. Візуальну концепцію розробляємо відповідно до характеру вашого бренду."},"AI video":{"ru":"AI-видео","uk":"AI-відео"},"Short advertising films, product animations and video for social media and websites — from concept and storyboard to editing.":{"ru":"Создаём короткие рекламные ролики, анимацию продуктов и видео для соцсетей и сайтов — от идеи и раскадровки до монтажа.","uk":"Створюємо короткі рекламні ролики, анімацію продуктів і відео для соцмереж та сайтів — від ідеї й розкадрування до монтажу."},"Campaign creative":{"ru":"Креативы для кампаний","uk":"Креативи для кампаній"},"A creative concept, key visual and a cohesive series of images and videos adapted to advertising formats. Ad setup and management are quoted separately.":{"ru":"Разрабатываем идею кампании, её основной визуальный образ и серию изображений и видео в едином стиле. Адаптируем материалы к рекламным форматам. Настройка и ведение рекламы оплачиваются отдельно.","uk":"Розробляємо ідею кампанії, її основний візуальний образ і серію зображень та відео в єдиному стилі. Адаптуємо матеріали до рекламних форматів. Налаштування й ведення реклами оплачуються окремо."},"Send a brief":{"ru":"Отправить бриф","uk":"Надіслати бриф"},"about your business":{"ru":"о вашем бизнесе","uk":"про ваш бізнес"},"Looking for more enquiries, a stronger brand presence or a launch in Poland? Tell us your goal. We will recommend the right marketing activities for your business and budget.":{"ru":"Хотите привлекать больше клиентов, сделать бренд узнаваемее или выйти на польский рынок? Расскажите о своих задачах. Предложим план продвижения с учётом вашего бизнеса и бюджета.","uk":"Хочете залучати більше клієнтів, зробити бренд упізнаванішим або вийти на польський ринок? Розкажіть про свої завдання. Запропонуємо план просування з урахуванням вашого бізнесу та бюджету."},"Where we work":{"ru":"Где мы работаем","uk":"Де ми працюємо"},"We speak":{"ru":"Языки общения","uk":"Мови спілкування"},"Reply":{"ru":"Ответ","uk":"Відповідь"},"within 24 h":{"ru":"в течение 24 часов","uk":"протягом 24 годин"},"Scope — choose what you need":{"ru":"Выберите нужные услуги","uk":"Оберіть потрібні послуги"},"AI photo & video":{"ru":"AI-фото и видео","uk":"AI-фото та відео"},"Photo/video production":{"ru":"Создание фото и видео","uk":"Створення фото й відео"},"Brand strategy & visual identity":{"ru":"Стратегия и визуальный образ бренда","uk":"Стратегія та візуальний образ бренду"},"Budget for our services (optional)":{"ru":"Бюджет на наши услуги (необязательно)","uk":"Бюджет на наші послуги (необов’язково)"},"2,000–4,000 PLN":{"ru":"2 000–4 000 PLN","uk":"2 000–4 000 PLN"},"4,000–8,000 PLN":{"ru":"4 000–8 000 PLN","uk":"4 000–8 000 PLN"},"8,000–15,000 PLN":{"ru":"8 000–15 000 PLN","uk":"8 000–15 000 PLN"},"15,000+ PLN":{"ru":"15 000+ PLN","uk":"15 000+ PLN"},"Let’s discuss":{"ru":"Обсудим вместе","uk":"Обговоримо разом"},"The selected budget covers our services. Meta and Google advertising spend is agreed with you separately based on the strategy and paid directly by you to the platforms. Please allow for this additional cost when planning your total budget. For ongoing support, select a monthly amount; for a one-off project, select the total service budget.":{"ru":"Выбранный бюджет относится к нашим услугам. Расходы на рекламу в Meta и Google согласовываем отдельно, исходя из стратегии. Вы оплачиваете их напрямую рекламным платформам — учитывайте это при планировании общего бюджета. Для постоянного сопровождения укажите месячную сумму, для разового проекта — бюджет на его реализацию.","uk":"Обраний бюджет стосується наших послуг. Витрати на рекламу в Meta та Google погоджуємо окремо, відповідно до стратегії. Ви сплачуєте їх безпосередньо рекламним платформам — враховуйте це під час планування загального бюджету. Для постійного супроводу вкажіть місячну суму, для разового проєкту — бюджет на його реалізацію."},"About your business":{"ru":"О вашем бизнесе","uk":"Про ваш бізнес"},"What do you need? Tell us briefly about your business and your goal.":{"ru":"Расскажите о своём бизнесе и о том, чего хотите достичь.","uk":"Розкажіть про свій бізнес і про те, чого хочете досягти."},"Name":{"ru":"Имя","uk":"Ім’я"},"Brand / company":{"ru":"Бренд / компания","uk":"Бренд / компанія"},"E-mail":{"ru":"E-mail","uk":"E-mail"},"Phone (optional)":{"ru":"Телефон (необязательно)","uk":"Телефон (необов’язково)"},"Send an enquiry":{"ru":"Отправить запрос","uk":"Надіслати запит"},"Send your enquiry directly here. We will reply by email.":{"ru":"Отправьте запрос через форму. Мы ответим по электронной почте.","uk":"Надішліть запит через форму. Ми відповімо електронною поштою."},"Thank you. Your enquiry has been sent.":{"ru":"Спасибо! Ваш запрос отправлен.","uk":"Дякуємо! Ваш запит надіслано."},"Privacy policy (RODO/GDPR)":{"ru":"Политика конфиденциальности (RODO/GDPR)","uk":"Політика конфіденційності (RODO/GDPR)"},"I consent to the processing of my personal data by MARQÈ in order to respond to this inquiry, in line with the <a href=\"polityka-prywatnosci.html\">privacy policy (RODO/GDPR)</a>.":{"ru":"Я соглашаюсь на обработку моих персональных данных MARQÈ для ответа на запрос в соответствии с <a href=\"polityka-prywatnosci.html\">политикой конфиденциальности (RODO/GDPR)</a>.","uk":"Я погоджуюся на обробку моїх персональних даних MARQÈ для відповіді на запит відповідно до <a href=\"polityka-prywatnosci.html\">політики конфіденційності (RODO/GDPR)</a>."},"Instagram visual content":{"ru":"Визуальное оформление Instagram","uk":"Візуальне оформлення Instagram"}};
+window.MARQE_TRANSLATIONS={
+  "Skip to contact": {
+    "ru": "Перейти к форме",
+    "uk": "Перейти до форми"
+  },
+  "Projects": {
+    "ru": "Проекты",
+    "uk": "Проєкти"
+  },
+  "Services": {
+    "ru": "Услуги",
+    "uk": "Послуги"
+  },
+  "Contact": {
+    "ru": "Контакты",
+    "uk": "Контакти"
+  },
+  "Open the door to new possibilities.": {
+    "ru": "Открой дверь новым возможностям",
+    "uk": "Відкрий двері до нових можливостей"
+  },
+  "Let’s talk": {
+    "ru": "Написать нам",
+    "uk": "Написати нам"
+  },
+  "Pause": {
+    "ru": "Приостановить видео",
+    "uk": "Призупинити відео"
+  },
+  "Skip intro": {
+    "ru": "Пропустить",
+    "uk": "Пропустити"
+  },
+  "Replay film": {
+    "ru": "Смотреть снова",
+    "uk": "Переглянути ще раз"
+  },
+  "Marketing that helps you reach your customers.": {
+    "ru": "Помогаем брендам находить клиентов в Польше",
+    "uk": "Допомагаємо брендам знаходити клієнтів у Польщі"
+  },
+  "We manage social media, create Meta and Google Ads campaigns, and produce photography and video — including AI content.": {
+    "ru": "Помогаем запускать и развивать бренды в Польше: от позиционирования и ведения соцсетей до рекламы в Meta и Google, съёмок и локальных активаций. AI-контент создаём и для удалённых проектов.",
+    "uk": "Допомагаємо запускати й розвивати бренди в Польщі: від позиціонування та ведення соцмереж до реклами в Meta й Google, зйомок і локальних активацій. AI-контент створюємо й для дистанційних проєктів."
+  },
+  "Explore our work": {
+    "ru": "Смотреть проекты",
+    "uk": "Переглянути проєкти"
+  },
+  "Warsaw · Worldwide": {
+    "ru": "Варшава",
+    "uk": "Варшава"
+  },
+  "Project managed from the ground up": {
+    "ru": "Запуск и продвижение с нуля",
+    "uk": "Запуск і просування з нуля"
+  },
+  "Sanshé on Instagram ↗": {
+    "ru": "Sanshé в Instagram ↗",
+    "uk": "Sanshé в Instagram ↗"
+  },
+  "Kicia on Instagram ↗": {
+    "ru": "Kicia в Instagram ↗",
+    "uk": "Kicia в Instagram ↗"
+  },
+  "Premium beauty salon": {
+    "ru": "Премиальный салон красоты в Варшаве",
+    "uk": "Преміальний салон краси у Варшаві"
+  },
+  "Asian bistro": {
+    "ru": "Азиатское бистро",
+    "uk": "Азійське бістро"
+  },
+  "From communication concept to the salon’s presence in Poland.": {
+    "ru": "Адаптировали бренд для польского рынка и запустили продвижение салона: от концепции коммуникации до контента и рекламы.",
+    "uk": "Адаптували бренд до польського ринку й запустили просування салону: від концепції комунікації до контенту та реклами."
+  },
+  "Building the bistro’s presence from its first posts and campaigns.": {
+    "ru": "Запустили присутствие бистро в Instagram и Google. Взяли на себя контент, рекламу и развитие аудитории с первых публикаций.",
+    "uk": "Створили сторінку бістро в Instagram і профіль у Google. Від перших дописів працювали над контентом, рекламою та залученням аудиторії."
+  },
+  "Explore the scope of work": {
+    "ru": "Что сделали для бренда",
+    "uk": "Що зробили для бренду"
+  },
+  "Salon communication concept, visual direction and brand adaptation for the Polish market.": {
+    "ru": "Разработали концепцию коммуникации салона. Адаптировали визуальную подачу бренда для польской аудитории.",
+    "uk": "Розробили концепцію комунікації салону. Адаптували візуальну подачу бренду для польської аудиторії."
+  },
+  "Bistro positioning, communication strategy and visual direction tailored to the Polish market.": {
+    "ru": "Адаптировали позиционирование, коммуникацию и визуальную подачу бистро для польского рынка.",
+    "uk": "Адаптували позиціонування, комунікацію та візуальну подачу бістро до польського ринку."
+  },
+  "Instagram launched and managed from scratch — profile setup, visual direction, publishing and community growth.": {
+    "ru": "Создали Instagram с нуля: настроили и оформили профиль, разработали контент-план, публиковали материалы и привлекали подписчиков.",
+    "uk": "Створили Instagram з нуля: налаштували й оформили профіль, розробили контент-план, публікували матеріали та залучали підписників."
+  },
+  "Google Business Profile creation, setup and optimisation.": {
+    "ru": "Создали и настроили профиль компании в Google, заполнили информацию и оптимизировали его для поиска.",
+    "uk": "Створили й налаштували профіль компанії в Google, заповнили інформацію та оптимізували його для пошуку."
+  },
+  "Content production: selecting photographers and videographers, concepts, scripts and shoot coordination.": {
+    "ru": "Организовали контент-продакшн: подобрали фотографов и видеографов, разработали идеи и сценарии, координировали съёмки.",
+    "uk": "Організували контент-продакшн: дібрали фотографів і відеографів, розробили ідеї та сценарії, координували зйомки."
+  },
+  "AI content and creative assets for social media and advertising.": {
+    "ru": "Создавали AI-контент и рекламные креативы для соцсетей и кампаний.",
+    "uk": "Створювали AI-контент і рекламні креативи для соцмереж та кампаній."
+  },
+  "Meta Ads and Google Ads launch and management, performance analysis and optimisation.": {
+    "ru": "Запускали и вели рекламу в Meta и Google. Анализировали результаты и оптимизировали кампании.",
+    "uk": "Запускали й вели рекламу в Meta та Google. Аналізували результати й оптимізували кампанії."
+  },
+  "The brand name and logo were supplied by the client. Our work focused on market adaptation, communication and digital growth.": {
+    "ru": "Название и логотип уже были у бренда. Наша работа — адаптация для польского рынка, контент и продвижение.",
+    "uk": "Бренд уже мав назву й логотип. Наша робота — адаптація до польського ринку, контент і просування."
+  },
+  "0 → approx. 10.4k": {
+    "ru": "0 → ≈10,4 тыс.",
+    "uk": "0 → ≈10,4 тис."
+  },
+  "0 → 6,776": {
+    "ru": "0 → 6 776",
+    "uk": "0 → 6 776"
+  },
+  "Instagram followers": {
+    "ru": "подписчиков в Instagram",
+    "uk": "підписників в Instagram"
+  },
+  "Starting point": {
+    "ru": "На старте",
+    "uk": "На старті"
+  },
+  "Current profile": {
+    "ru": "После запуска",
+    "uk": "Після запуску"
+  },
+  "Follower counts shown in the supplied profile screenshots. View the latest profile on Instagram.": {
+    "ru": "Число подписчиков — на момент скриншота. Текущие данные — в Instagram проекта.",
+    "uk": "Кількість підписників — на момент знімка екрана. Поточні дані — в Instagram проєкту."
+  },
+  "What": {
+    "ru": "Что мы",
+    "uk": "Що ми"
+  },
+  "we do": {
+    "ru": "делаем",
+    "uk": "робимо"
+  },
+  "Choose the support your business needs — from social media and advertising to visual direction and content production.": {
+    "ru": "От стратегии до контента и рекламы. Берём на себя отдельное направление или объединяем несколько — под задачи бизнеса.",
+    "uk": "Від стратегії до контенту й реклами. Працюємо над окремим напрямом або поєднуємо кілька — залежно від завдань бізнесу."
+  },
+  "Social media management": {
+    "ru": "SMM",
+    "uk": "SMM"
+  },
+  "Social Media Strategy": {
+    "ru": "SMM-стратегия",
+    "uk": "SMM-стратегія"
+  },
+  "The brand's social media presence: platforms, content pillars, formats, communication, posting frequency and account growth.": {
+    "ru": "Определяем роль соцсетей в продвижении бренда. Выбираем площадки, темы, форматы и тон общения. Планируем публикации и развитие аккаунта.",
+    "uk": "Визначаємо роль соцмереж у просуванні бренду. Обираємо платформи, теми, формати й тон спілкування. Плануємо публікації та розвиток акаунта."
+  },
+  "Social Media Management (SMM)": {
+    "ru": "Ведение соцсетей",
+    "uk": "Ведення соцмереж"
+  },
+  "Social media management (SMM)": {
+    "ru": "SMM",
+    "uk": "SMM"
+  },
+  "End-to-end social media management — planning, publishing, content coordination and day-to-day brand communication.": {
+    "ru": "Планируем контент, координируем его создание и публикуем материалы. Ведём повседневную коммуникацию бренда в соцсетях.",
+    "uk": "Плануємо контент, координуємо його створення та публікуємо матеріали. Ведемо щоденну комунікацію бренду в соцмережах."
+  },
+  "Content Strategy": {
+    "ru": "Контент-стратегия",
+    "uk": "Контент-стратегія"
+  },
+  "Planning what content the brand should create, for whom and to what end.": {
+    "ru": "Определяем, что говорить аудитории и в каких форматах. Связываем темы и рубрики с задачами бренда.",
+    "uk": "Визначаємо, про що говорити з аудиторією та в яких форматах. Добираємо теми й рубрики відповідно до завдань бренду."
+  },
+  "Community Management": {
+    "ru": "Работа с аудиторией",
+    "uk": "Робота зі спільнотою"
+  },
+  "Building and running the brand's community — comments, messages, audience engagement.": {
+    "ru": "Отвечаем на комментарии и сообщения, поддерживаем диалог и вовлекаем аудиторию в жизнь бренда.",
+    "uk": "Відповідаємо на коментарі й повідомлення, підтримуємо діалог і залучаємо аудиторію до життя бренду."
+  },
+  "Content & profile design": {
+    "ru": "Контент и дизайн",
+    "uk": "Контент і дизайн"
+  },
+  "We create copy, graphics and cohesive templates for posts and stories, aligned with your brand and communication plan.": {
+    "ru": "Пишем тексты, создаём графику и шаблоны для постов и сторис. Сохраняем единый стиль и характер бренда.",
+    "uk": "Пишемо тексти, створюємо графіку й шаблони для дописів і сторіс. Зберігаємо єдиний стиль і характер бренду."
+  },
+  "Meta & Google Ads": {
+    "ru": "Реклама в Meta и Google",
+    "uk": "Реклама в Meta та Google"
+  },
+  "Strategy, setup and management of ad campaigns on Facebook and Instagram.": {
+    "ru": "Настраиваем и ведём рекламу в Facebook и Instagram для привлечения клиентов в Польше. Подбираем аудитории, тестируем креативы и оптимизируем кампании под обращения, записи или покупки — в зависимости от задачи.",
+    "uk": "Налаштовуємо й ведемо рекламу у Facebook та Instagram для залучення клієнтів у Польщі. Добираємо аудиторії, тестуємо креативи й оптимізуємо кампанії під звернення, записи чи покупки — залежно від завдання."
+  },
+  "Planning, configuration and optimisation of Google campaigns.": {
+    "ru": "Запускаем рекламу в Google с учётом спроса и конкуренции в Польше. Работаем с поисковыми запросами и географией, анализируем обращения и стоимость результата при настроенном отслеживании.",
+    "uk": "Запускаємо рекламу в Google з урахуванням попиту й конкуренції в Польщі. Працюємо з пошуковими запитами та географією, аналізуємо звернення й вартість результату за налаштованого відстеження."
+  },
+  "Campaign Optimization": {
+    "ru": "Оптимизация рекламы",
+    "uk": "Оптимізація реклами"
+  },
+  "Results analysis and continuous ad optimisation for cost, sales, leads, traffic or other goals.": {
+    "ru": "Анализируем результаты и корректируем кампании под выбранные цели: заявки, продажи или переходы на сайт. Следим за стоимостью результата.",
+    "uk": "Аналізуємо результати й коригуємо кампанії відповідно до обраних цілей: звернень, продажів чи переходів на сайт. Стежимо за вартістю результату."
+  },
+  "Analytics & Audit": {
+    "ru": "Аудит и аналитика",
+    "uk": "Аудит і аналітика"
+  },
+  "Audit of marketing, ads and digital channels plus data analysis and recommendations.": {
+    "ru": "Изучаем рекламу и каналы продвижения. Находим слабые места и предлагаем, что изменить.",
+    "uk": "Аналізуємо рекламу й канали просування. Виявляємо слабкі місця та пропонуємо, що змінити."
+  },
+  "Google Business Profile": {
+    "ru": "Профиль компании в Google",
+    "uk": "Профіль компанії в Google"
+  },
+  "We create and organise your Google Business Profile, including business details, services and visuals, to help customers find you.": {
+    "ru": "Создаём и оформляем профиль компании в Google: добавляем услуги, фотографии и информацию о бизнесе. Помогаем клиентам найти вас в поиске и на картах.",
+    "uk": "Створюємо й оформлюємо профіль компанії в Google: додаємо послуги, фотографії та інформацію про бізнес. Допомагаємо клієнтам знайти вас у пошуку й на картах."
+  },
+  "Brand strategy & visual direction": {
+    "ru": "Стратегия и айдентика",
+    "uk": "Стратегія та айдентика"
+  },
+  "Analysis & recommendations": {
+    "ru": "Анализ бренда и рынка",
+    "uk": "Аналіз бренду й ринку"
+  },
+  "We get to know your business, goals and current communication. We review your audience and competitors to identify what needs improving and where to focus.": {
+    "ru": "Изучаем бизнес, аудиторию и конкурентов в Польше. Определяем, как представить бренд на местном рынке и какие изменения нужны в его коммуникации.",
+    "uk": "Вивчаємо бізнес, аудиторію та конкурентів у Польщі. Визначаємо, як представити бренд на місцевому ринку та що варто змінити в його комунікації."
+  },
+  "Positioning & communication": {
+    "ru": "Позиционирование",
+    "uk": "Позиціонування"
+  },
+  "We define who your brand speaks to, what makes it distinctive and how to communicate that. We establish key messages, tone of voice and visual direction.": {
+    "ru": "Формулируем, чем бренд ценен для польской аудитории и почему стоит выбрать именно его. Адаптируем ключевые сообщения, тон общения и визуальную подачу к местному контексту.",
+    "uk": "Формулюємо цінність бренду для польської аудиторії та причини обрати саме його. Адаптуємо ключові повідомлення, тон спілкування й візуальну подачу до місцевого контексту."
+  },
+  "Action plan": {
+    "ru": "План продвижения",
+    "uk": "План просування"
+  },
+  "We turn these decisions into a practical plan for content, promotional channels and priorities. We tailor the scope to your needs — from refining communication to planning your brand’s entry into the Polish market.": {
+    "ru": "Определяем каналы, контент и приоритеты. Составляем план под конкретную задачу — от обновления коммуникации до выхода на польский рынок.",
+    "uk": "Визначаємо канали, контент і пріоритети. Складаємо план під конкретне завдання — від оновлення комунікації до виходу на польський ринок."
+  },
+  "Visual identity": {
+    "ru": "Айдентика",
+    "uk": "Айдентика"
+  },
+  "We develop or refresh your visual identity: colours, typography and brand presentation. We keep your profiles, content and advertising materials consistent.": {
+    "ru": "Разрабатываем или обновляем визуальный стиль: цвета, шрифты и принципы оформления. Объединяем соцсети, контент и рекламу в узнаваемый образ бренда.",
+    "uk": "Розробляємо або оновлюємо візуальний стиль: кольори, шрифти й принципи оформлення. Поєднуємо соцмережі, контент і рекламу у впізнаваний образ бренду."
+  },
+  "Photo & video production": {
+    "ru": "Фото и видео",
+    "uk": "Фото й відео"
+  },
+  "Photo & Video Production": {
+    "ru": "Продакшн",
+    "uk": "Продакшн"
+  },
+  "Organising and delivering professional photo shoots and video production.": {
+    "ru": "Организуем фото- и видеосъёмки для брендов — от подготовки до готовых материалов.",
+    "uk": "Організовуємо фото- й відеозйомки для брендів — від підготовки до готових матеріалів."
+  },
+  "Concept & shoot planning": {
+    "ru": "Подготовка съёмки",
+    "uk": "Підготовка зйомки"
+  },
+  "We develop the concept, moodboard and shot list, and coordinate production with our photographer and videographer partners in Warsaw.": {
+    "ru": "Подбираем проверенную съёмочную команду под задачу и координируем производство — от идеи до готовых материалов.",
+    "uk": "Добираємо перевірену знімальну команду під завдання й координуємо виробництво — від ідеї до готових матеріалів."
+  },
+  "Brand photography & short video": {
+    "ru": "Съёмка для бренда",
+    "uk": "Зйомка для бренду"
+  },
+  "We capture products, interiors and the atmosphere of your business, preparing content for social media and advertising in the formats each channel needs.": {
+    "ru": "Снимаем продукты, интерьеры и атмосферу пространства. Готовим фото и короткие видео для соцсетей и рекламы в нужных форматах.",
+    "uk": "Знімаємо продукти, інтер’єри й атмосферу простору. Готуємо фото та короткі відео для соцмереж і реклами в потрібних форматах."
+  },
+  "AI Photo & Video Production": {
+    "ru": "AI-контент",
+    "uk": "AI-контент"
+  },
+  "AI imagery": {
+    "ru": "AI-изображения",
+    "uk": "AI-зображення"
+  },
+  "Product and brand imagery created with AI, with art direction tailored to your brand.": {
+    "ru": "Создаём изображения продуктов и бренда с помощью искусственного интеллекта. Продумываем концепцию и визуальную подачу.",
+    "uk": "Створюємо зображення продуктів і бренду за допомогою штучного інтелекту. Продумуємо концепцію та візуальну подачу."
+  },
+  "AI video": {
+    "ru": "AI-видео",
+    "uk": "AI-відео"
+  },
+  "Short advertising films, product animations and video for social media and websites — from concept and storyboard to editing.": {
+    "ru": "Создаём короткие рекламные видео и анимацию продуктов для соцсетей и сайтов — от идеи и раскадровки до монтажа.",
+    "uk": "Створюємо короткі рекламні відео й анімацію продуктів для соцмереж і сайтів — від ідеї та розкадрування до монтажу."
+  },
+  "Campaign creative": {
+    "ru": "Рекламные креативы",
+    "uk": "Рекламні креативи"
+  },
+  "A creative concept, key visual and a cohesive series of images and videos adapted to advertising formats. Ad setup and management are quoted separately.": {
+    "ru": "Разрабатываем идею кампании и создаём серию изображений и видео в едином стиле. Адаптируем их под рекламные форматы. Запуск и ведение рекламы рассчитываем отдельно.",
+    "uk": "Розробляємо ідею кампанії та створюємо серію зображень і відео в єдиному стилі. Адаптуємо їх до рекламних форматів. Запуск і ведення реклами розраховуємо окремо."
+  },
+  "Send a brief": {
+    "ru": "Рассказать о проекте",
+    "uk": "Розповісти про проєкт"
+  },
+  "about your business": {
+    "ru": "о своём проекте",
+    "uk": "про свій проєкт"
+  },
+  "Looking for more enquiries, a stronger brand presence or a launch in Poland? Tell us your goal. We will recommend the right marketing activities for your business and budget.": {
+    "ru": "Запускаешь бизнес в Польше или хочешь усилить его позиции? Расскажи о своей задаче. Предложим, как выстроить коммуникацию, контент и продвижение для местной аудитории.",
+    "uk": "Запускаєш бізнес у Польщі чи хочеш посилити його позиції? Розкажи про своє завдання. Запропонуємо, як вибудувати комунікацію, контент і просування для місцевої аудиторії."
+  },
+  "Where we work": {
+    "ru": "География",
+    "uk": "Географія"
+  },
+  "We speak": {
+    "ru": "Языки общения",
+    "uk": "Мови спілкування"
+  },
+  "Reply": {
+    "ru": "На связи",
+    "uk": "На зв’язку"
+  },
+  "within 24 h": {
+    "ru": "Ответим по почте",
+    "uk": "Відповімо на пошту"
+  },
+  "Scope — choose what you need": {
+    "ru": "Какие услуги нужны?",
+    "uk": "Які послуги потрібні?"
+  },
+  "AI photo & video": {
+    "ru": "AI-контент",
+    "uk": "AI-контент"
+  },
+  "Photo/video production": {
+    "ru": "Фото и видео",
+    "uk": "Фото й відео"
+  },
+  "Brand strategy & visual identity": {
+    "ru": "Стратегия и айдентика",
+    "uk": "Стратегія та айдентика"
+  },
+  "Budget for our services (optional)": {
+    "ru": "Бюджет на услуги · необязательно",
+    "uk": "Бюджет на послуги · необов’язково"
+  },
+  "2,000–4,000 PLN": {
+    "ru": "2 000–4 000 PLN",
+    "uk": "2 000–4 000 PLN"
+  },
+  "4,000–8,000 PLN": {
+    "ru": "4 000–8 000 PLN",
+    "uk": "4 000–8 000 PLN"
+  },
+  "8,000–15,000 PLN": {
+    "ru": "8 000–15 000 PLN",
+    "uk": "8 000–15 000 PLN"
+  },
+  "15,000+ PLN": {
+    "ru": "От 15 000 PLN",
+    "uk": "Від 15 000 PLN"
+  },
+  "Let’s discuss": {
+    "ru": "Нужен расчёт",
+    "uk": "Потрібен розрахунок"
+  },
+  "The selected budget covers our services. Meta and Google advertising spend is agreed with you separately based on the strategy and paid directly by you to the platforms. Please allow for this additional cost when planning your total budget. For ongoing support, select a monthly amount; for a one-off project, select the total service budget.": {
+    "ru": "Укажи бюджет на наши услуги: в месяц — для постоянной работы, на весь проект — для разовой задачи. Рекламный бюджет согласуем отдельно. Его нужно учитывать сверх стоимости услуг и оплачивать напрямую Meta и Google.",
+    "uk": "Вкажи бюджет на наші послуги: на місяць — для постійної співпраці, на весь проєкт — для разового завдання. Рекламний бюджет погодимо окремо. Його потрібно врахувати додатково до вартості послуг і сплачувати безпосередньо Meta та Google."
+  },
+  "About your business": {
+    "ru": "О проекте",
+    "uk": "Про проєкт"
+  },
+  "What do you need? Tell us briefly about your business and your goal.": {
+    "ru": "Чем занимается твой бизнес и какую задачу нужно решить?",
+    "uk": "Чим займається твій бізнес і яке завдання потрібно вирішити?"
+  },
+  "Name": {
+    "ru": "Имя",
+    "uk": "Ім’я"
+  },
+  "Brand / company": {
+    "ru": "Бренд или компания",
+    "uk": "Бренд або компанія"
+  },
+  "E-mail": {
+    "ru": "Email",
+    "uk": "Email"
+  },
+  "Phone (optional)": {
+    "ru": "Телефон · необязательно",
+    "uk": "Телефон · необов’язково"
+  },
+  "Send an enquiry": {
+    "ru": "Отправить заявку",
+    "uk": "Надіслати заявку"
+  },
+  "Send your enquiry directly here. We will reply by email.": {
+    "ru": "Заявка отправится прямо с сайта. Ответим на указанный email.",
+    "uk": "Заявку буде надіслано із сайту. Відповімо на вказаний email."
+  },
+  "Thank you. Your enquiry has been sent.": {
+    "ru": "Спасибо! Заявка отправлена. Ответим на указанный email.",
+    "uk": "Дякуємо! Заявку надіслано. Відповімо на вказаний email."
+  },
+  "Privacy policy (RODO/GDPR)": {
+    "ru": "Политика конфиденциальности",
+    "uk": "Політика конфіденційності"
+  },
+  "I consent to the processing of my personal data by MARQÈ in order to respond to this inquiry, in line with the <a href=\"polityka-prywatnosci.html\">privacy policy (RODO/GDPR)</a>.": {
+    "ru": "Согласен на обработку персональных данных для ответа на заявку в соответствии с <a href=\"polityka-prywatnosci.html\">политикой конфиденциальности</a>.",
+    "uk": "Погоджуюся на обробку персональних даних для відповіді на заявку відповідно до <a href=\"polityka-prywatnosci.html\">політики конфіденційності</a>."
+  },
+  "Instagram visual content": {
+    "ru": "Контент проекта",
+    "uk": "Контент проєкту"
+  },
+  "Заголовок контактов, первая строка": {
+    "ru": "Расскажи",
+    "uk": "Розкажи"
+  },
+  "Ошибка выбора услуги": {
+    "ru": "Выбери хотя бы одну услугу.",
+    "uk": "Обери хоча б одну послугу."
+  },
+  "Ошибка имени": {
+    "ru": "Укажи имя.",
+    "uk": "Вкажи ім’я."
+  },
+  "Ошибка email": {
+    "ru": "Проверь email — например, name@example.com.",
+    "uk": "Перевір email — наприклад, name@example.com."
+  },
+  "Ошибка согласия": {
+    "ru": "Для отправки заявки нужно согласие на обработку персональных данных.",
+    "uk": "Щоб надіслати заявку, потрібна згода на обробку персональних даних."
+  },
+  "Ошибка отправки": {
+    "ru": "Не удалось отправить заявку. Попробуй ещё раз или напиши на marqepragency@gmail.com.",
+    "uk": "Не вдалося надіслати заявку. Спробуй ще раз або напиши на marqepragency@gmail.com."
+  },
+  "Alt изображения до": {
+    "ru": "Профиль на старте: 0 подписчиков",
+    "uk": "Профіль на старті: 0 підписників"
+  },
+  "Alt изображения после": {
+    "ru": "Профиль Instagram после запуска",
+    "uk": "Профіль Instagram після запуску"
+  },
+  "Доступное имя ссылки": {
+    "ru": "Открыть скриншот в новой вкладке",
+    "uk": "Відкрити знімок екрана в новій вкладці"
+  },
+  "Отправка в процессе": {
+    "ru": "Отправляем…",
+    "uk": "Надсилаємо…"
+  },
+  "Воспроизведение видео": {
+    "ru": "Воспроизвести",
+    "uk": "Відтворити"
+  },
+  "Открыть мобильное меню": {
+    "ru": "Открыть меню",
+    "uk": "Відкрити меню"
+  },
+  "Закрыть мобильное меню": {
+    "ru": "Закрыть меню",
+    "uk": "Закрити меню"
+  },
+  "Название группы языков": {
+    "ru": "Язык сайта",
+    "uk": "Мова сайту"
+  },
+  "Чип Google-профиля": {
+    "ru": "Google-профиль",
+    "uk": "Google-профіль"
+  },
+  "Title страницы": {
+    "ru": "MARQÈ — маркетинг и контент в Варшаве",
+    "uk": "MARQÈ — маркетинг і контент у Варшаві"
+  },
+  "Meta description": {
+    "ru": "SMM, реклама в Meta и Google, айдентика, фото, видео и AI-контент. MARQÈ помогает брендам выходить на польский рынок и развивать продвижение.",
+    "uk": "SMM, реклама в Meta та Google, айдентика, фото, відео й AI-контент. MARQÈ допомагає брендам виходити на польський ринок і розвивати просування."
+  },
+  "Футер": {
+    "ru": "MARQÈ © 2026 · Варшава · Польша",
+    "uk": "MARQÈ © 2026 · Варшава · Польща"
+  },
+  "Warsaw": {
+    "ru": "Варшава",
+    "uk": "Варшава"
+  },
+  "Tell us": {
+    "ru": "Расскажи",
+    "uk": "Розкажи"
+  },
+  "PR & events": {
+    "ru": "PR и мероприятия",
+    "uk": "PR і події"
+  },
+  "Brand collaborations, pop-ups and events": {
+    "ru": "Коллаборации, поп-апы и события",
+    "uk": "Колаборації, попапи й події"
+  },
+  "We develop ideas for brand collaborations, pop-ups and events in Poland, select partners through our local network and coordinate the launch.": {
+    "ru": "Придумываем коллаборации, поп-апы и мероприятия в Польше. Подбираем партнёров через наработанные контакты и помогаем организовать запуск.",
+    "uk": "Розробляємо ідеї колаборацій, попапів і подій у Польщі. Знаходимо партнерів завдяки напрацьованим контактам і допомагаємо з організацією."
+  },
+  "A plan for sustained growth": {
+    "ru": "Работаем на перспективу",
+    "uk": "Працюємо на перспективу"
+  },
+  "For ongoing promotion, plan for at least three months: time to launch, test and optimise. Results depend on the starting point, offer and budget. One-off content and AI projects are scoped separately.": {
+    "ru": "Для системного продвижения рекомендуем планировать сотрудничество минимум на три месяца: это время на запуск, тестирование и оптимизацию. Результаты зависят от исходной ситуации, предложения и бюджета. Разовые съёмки и AI-проекты обсуждаем отдельно.",
+    "uk": "Для системного просування радимо планувати співпрацю щонайменше на три місяці: це час на запуск, тестування й оптимізацію. Результати залежать від початкової ситуації, пропозиції та бюджету. Разові зйомки й AI-проєкти обговорюємо окремо."
+  },
+  "We also create AI content remotely for brands outside Poland.": {
+    "ru": "AI-контент создаём также для брендов за пределами Польши — дистанционно.",
+    "uk": "AI-контент також створюємо дистанційно для брендів за межами Польщі."
+  },
+  "13 years of marketing experience. We understand the Polish market and help brands tailor their communication to the local audience.": {
+    "ru": "13 лет опыта в маркетинге. Знаем, как позиционировать бренд на польском рынке: что важно местной аудитории, как с ней говорить и через какие каналы привлекать клиентов. Соединяем стратегию, контент и рекламу в работу на одну цель.",
+    "uk": "13 років досвіду в маркетингу. Знаємо, як позиціонувати бренд на польському ринку: що важливо місцевій аудиторії, як із нею спілкуватися та через які канали залучати клієнтів. Поєднуємо стратегію, контент і рекламу заради спільної мети."
+  }
+};
